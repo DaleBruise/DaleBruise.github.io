@@ -1,17 +1,6 @@
-# Welcome to MkDocs
+# Welcome to Fangrb's Cite 🧠
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+欢迎来到我的主页，主页中包括技术分享和平日中的学习记录、推荐好物、经验分享和本人自己的随记等等。
+主页中的所有内容均可以查阅和参考，若有问题，
+可以在我的github主页留言或者邮箱DaleBruise@outlook.com中提出你的疑问或者想法。
+感谢大家的支持，祝我们都能在平日的记录中发现不一样的自己，让自己越来越好！
