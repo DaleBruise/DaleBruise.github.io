@@ -15,7 +15,7 @@
 切向畸变是由于感光元件和镜头不平行导致的，我们在程序中进行畸变矫正的过程中，一般不考虑切向畸变。
 ## 2、畸变矫正方法
 相机畸变的矫正不需要我们去移动平台或者其他平面，根据张正友提出的方法，对于大多数的情况，我们只需要一张棋盘格图像即可矫正，如下图所示。  
-![chessBoard](./docs/images/2D_Calibration/chessboard.png)  
+![chessBoard](https://github.com/DaleBruise/DaleBruise.github.io/blob/main/docs/images/2D_Calibration/chessboard.png?raw=true)  
 棋盘格所在平面要和镜头镜头尽量平行，也就是棋盘格所在平面的Z轴要尽量与镜头所在平面垂直，从而我们的精度可以更高。搭建好平台后，我们就可开始对相机进行建模，相机可以视为小孔成像模型，在此模型下，我们使用一个变换矩阵来将实际的坐标点投影到屏幕上：
 $$ sm' = A[R|t]M' $$  
 或者 $$s\begin{bmatrix}u \\ v \\ 1 \end{bmatrix}
