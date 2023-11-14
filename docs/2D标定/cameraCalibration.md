@@ -112,9 +112,9 @@ $$
 v' = v + (2p_2uv + p_1(r^2 + 2v^2)) + K_3r^2 + K_4r^4
 $$
 
-其中， $r^2 = u^2 + v^2$ 。
+其中， $r^2 = u^2 + v^2$ 。  
 ![distortion](https:/github.com/DaleBruise/DaleBruise.github.io/blob/main/docs/images/2D_Calibration/chessboard.png?raw=true)  
-***HALCON***也在其技术文档中提供了畸变参数的计算方式，均可以根据项目的情况使用，我们在此仅考虑畸变参数这一方式。对于五个参数： $k_1,k_2,k_3,p_1,p_2$ ，***HALCON***文档中也列出了，当他们的符号改变时对应的大致的畸变情况，来供我们参考我们算出的参数是否正确，如下图所示：
+***HALCON***也在其技术文档中提供了畸变参数的计算方式，均可以根据项目的情况使用，我们在此仅考虑畸变参数这一方式。对于五个参数： $k_1,k_2,k_3,p_1,p_2$ ，***HALCON***文档中也列出了，当他们的符号改变时对应的大致的畸变情况，来供我们参考我们算出的参数是否正确，如下图所示：  
 ![effect_of_distortion](https:/github.com/DaleBruise/DaleBruise.github.io/blob/main/docs/images/2D_Calibration/chessboard.png?raw=true)  
 ### 2.4、
 
