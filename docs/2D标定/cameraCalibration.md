@@ -21,7 +21,6 @@
 切向畸变是由于感光元件和镜头不平行导致的，我们在程序中进行畸变矫正的过程中，一般不考虑切向畸变。
 ## 2、畸变矫正方法
 相机畸变的矫正不需要我们去移动平台或者其他平面，根据张正友提出的方法，对于大多数的情况，我们只需要一张棋盘格图像即可矫正，如下图所示。  
-![chessBoard]()  
 <div align=center>
 <img src="https://raw.githubusercontent.com/DaleBruise/DaleBruise.github.io/main/docs/images/2D_Calibration/chessboard.png" width="210" height="143">  
 </div>  
