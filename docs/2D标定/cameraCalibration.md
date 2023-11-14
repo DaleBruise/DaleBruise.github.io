@@ -2,14 +2,20 @@
 相机标定总的来讲，就是将由于相机本身的特性——“鱼眼效应”造成的畸变现象通过一定的方法修正过来。并且，我们还可以补偿相机外界旋转造成的偏移。下面将会介绍相机标定的原理和我们的解决方法, 本文章是介绍针对类似小孔成像面阵相机的标定进行介绍。 
 ## 1、相机畸变
 为什么我们要相机标定？难道相机看到的东西，不就是我们想要的东西了吗？其实我们在一般的图像处理中是不需要进行标定流程的，只有我们需要将图像中的位置与现实中的位置对应起来以后，才需要进行一系列标定流程，相机标定只是我们标定流程中的一部分。根据项目的不同，我们需要走的标定流程不同，但是可以确认的是，相机标定是大概率被需要的，是在全套标定流程中简单但至关重要的一环，也就是相机的畸变修正。  
-![pinHole Model](https://raw.githubusercontent.com/DaleBruise/DaleBruise.github.io/main/docs/images/2D_Calibration/pinHole.png)  
+<div align=center>
+<img src="https://raw.githubusercontent.com/DaleBruise/DaleBruise.github.io/main/docs/images/2D_Calibration/pinHole.png"/>  
+</div>  
 对于小孔成像模型（如上图所示），一般的镜头畸变是由于透镜存在球面像差（由于透镜或者镜子的球形形状引起的像差，使得中心光线和边缘光线有不同的焦点）导致的。比如，我们投影一个直线时，越靠近边缘的部分，直线的弯曲程度就会越大。类似地，根据镜头不同的光学特性，就会有不同的畸变现象。      
 ### 1.1、径向畸变
 我们经常遇到的畸变类型为径向畸变，径向畸变的特性就是从图像中心点出发，与靠近边缘的位置现象越明显，其大致可以分为桶型畸变和枕型畸变。  
  - **桶型畸变**中，图像的放大倍率随距主光轴（不偏移）的距离而减小，类似将一个图像投影到一个桶型或者球形的物体上。鱼眼镜头采用半球形视角，利用这种畸变可以扩大我们的视野范围，牺牲的则是物体在视野中的形变。  
- ![barrel distortion](https://raw.githubusercontent.com/DaleBruise/DaleBruise.github.io/main/docs/images/2D_Calibration/barrel_distortion.png)  
+<div align=center>
+<img src="https://raw.githubusercontent.com/DaleBruise/DaleBruise.github.io/main/docs/images/2D_Calibration/barrel_distortion.png"/>  
+</div>  
  - **枕型畸变**中，与桶型畸变相反，图像的放大倍数随着距主光轴（不偏移）的距离而变大，没有穿过图像中心的线条会向内弯曲。凸球面透镜往往就会产生枕型畸变。  
- ![pincushion distortion](https://github.com/DaleBruise/DaleBruise.github.io/blob/main/docs/images/2D_Calibration/pincushion_distortion.png?raw=true)  
+<div align=center>
+<img src="https://raw.githubusercontent.com/DaleBruise/DaleBruise.github.io/main/docs/images/2D_Calibration/pincushion_distortion.png"/>  
+</div>  
 如果我们想要使用数学语言去表达此类畸变的程度，那么一般来讲，我们可以使用二次多项式来表达，他们随着主光轴的距离的平方次增加。后面就会讲到我们如何使用数学方法来补偿畸变带来的误差。
 ### 1.2、切向畸变
 切向畸变是由于感光元件和镜头不平行导致的，我们在程序中进行畸变矫正的过程中，一般不考虑切向畸变。
@@ -113,12 +119,13 @@ v' = v + (2p_2uv + p_1(r^2 + 2v^2)) + K_3r^2 + K_4r^4
 $$
 
 其中， $r^2 = u^2 + v^2$ 。  
-![distortion](https://raw.githubusercontent.com/DaleBruise/DaleBruise.github.io/main/docs/images/2D_Calibration/distortion.png)  
+<div align=center>
+<img src="https://raw.githubusercontent.com/DaleBruise/DaleBruise.github.io/main/docs/images/2D_Calibration/distortion.png"/>  
+</div>  
 ***HALCON***也在其技术文档中提供了畸变参数的计算方式，均可以根据项目的情况使用，我们在此仅考虑畸变参数这一方式。对于五个参数： $k_1,k_2,k_3,p_1,p_2$ ，***HALCON***文档中也列出了，当他们的符号改变时对应的大致的畸变情况，来供我们参考我们算出的参数是否正确，如下图所示：  
 <div align=center>
 <img src="https://raw.githubusercontent.com/DaleBruise/DaleBruise.github.io/main/docs/images/2D_Calibration/effect_of_distortion.png"/>  
-</div>
-
+</div>  
 ### 2.4、
 
 
