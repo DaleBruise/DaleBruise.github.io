@@ -136,9 +136,9 @@ $$
 ### 2.4、应用相机径向畸变后的图像坐标系点->应用相机切向畸变后的图像坐标系点
 相机在一些情况下，可能会出现本身的旋转偏移，这就是前面所提及的切向畸变。在极致平行的外界条件下，是可以不用考虑该步骤的，如果不考虑可以跳过本章节。相机切向畸变的情况如下图所示：  
 <div align=center>
-<img src="https://raw.githubusercontent.com/DaleBruise/DaleBruise.github.io/main/docs/images/2D_Calibration/effect_of_distortion.png"/>  
+<img src="https://raw.githubusercontent.com/DaleBruise/DaleBruise.github.io/main/docs/images/2D_Calibration/tiltModel.png"/>   
 </div>  
-
+ 
 在不同相机模型的旋转情况下，会使用到不同的模型，***OpenCV***中使用到了**Louhichi_H**团队研究出来的模型，其计算方式如下所示：  
 
 $$
