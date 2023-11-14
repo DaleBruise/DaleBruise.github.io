@@ -187,6 +187,49 @@ $$
 到目前为止，畸变模型计算的流程就结束了。但是我们可能会有疑问，首先是我们如何计算这五个参数（ $k_1,k_2,k_3,p_1,p_2$ ）；以及外部参数在我们仅仅知道相机的内部参数的情况下，如何计算……等等，这类问题我会留在后面的附录中，不定时更新，有任何问题或者错误都可以填补！🙇‍
 
 ## 附录1
+### 径向畸变参数计算
+我们需要进行计算的径向畸变参数有三个： $k_1,k_2,k_3$ 。我们设 $(u,v)$ 为没有畸变情况的点，$(\hat{u}, \hat{v})$ 为实际图像点， $(u_0,v_0)$ 为图像中心点（我们默认呜呜差，中心没有畸变现象），由上述内容，我们可以得到如下公式：  
+
+$$
+\hat{u} = u + (u-u_0)[k_1r^2 + k_2r^4 + k_3r^6]
+$$  
+
+$$
+\hat{v} = v + (v-v_0)[k_1r^2 + k_2r^4 + k_3r^6]
+$$  
+
+其中， $r^2 = u^2 + v^2$ ，把上述公式转换成矩阵的形式，我们可以得到：  
+
+$$
+\begin{bmatrix} (u-u_0)r^2 & (u-u_0)r^4 & (u-u_0)r^6 \\
+(v-v_0)r^2 & (v-v_0)r^4 & (v-v_0)r^6
+\end{bmatrix}
+\begin{bmatrix} k_1 \\
+k_2 \\
+k_3
+\end{bmatrix} 
+= \begin{bmatrix} \hat{u} - u \\
+\hat{v} - v
+\end{bmatrix}
+$$
+
+根据张正友老师的理论，我们可以使用最小二乘+最大似然估计来解该线性方程式。于是我们列出了以下两个式子：  
+首先是最小二乘式：  
+
+$$
+\mathbf{Dk} = \mathbf{d}, 
+\mathbf{k} = \begin{bmatrix} k_1 & k_2 & k_3 \end{bmatrix}^\top
+$$
+
+$$
+\implies \mathbf{k} = (\mathbf{D^\top} \mathbf{D})^{-1}\mathbf{D^\top} \mathbf{d}
+$$
+ 
+其次是最大似然估计：  
+
+$$
+\sum_{i = 1}^{m} \begin{Vmatrix} \mathbf{m_i} - \mathbf{\hat{m}}(\mathbf{A}, k_1, k_2, \mathbf{R_i},t,\mathrm{M_i})\end{Vmatrix}^2
+$$
 
 
 ## 附录2
