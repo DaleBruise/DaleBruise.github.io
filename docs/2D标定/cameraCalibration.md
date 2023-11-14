@@ -183,8 +183,18 @@ $$
 \binom{c}{r} = \binom{\frac{u''}{s_x} + c_x}{\frac{v''}{s_y} + c_y}
 $$
 
-其中， $s_x,s_y$ 即为缩放因子， $c_x,c_y$ 为图像中心坐标。我在前文提及到，该方法进行一次标定后，对于相同焦距的相机我们可以重复使用。因为由于画面被缩放了，因此我们需要最终改变点的大小，来应变画面的缩放。对于针孔相机，缩放因子就是CCD芯片上传感器原件的水平和垂直距离；对于远心相机，缩放因子则是世界坐标系中表示像素的实际大小比例。 
+其中， $s_x,s_y$ 即为缩放因子， $c_x,c_y$ 为图像中心坐标。我在前文提及到，该方法进行一次标定后，对于相同焦距的相机我们可以重复使用。因为由于画面被缩放了，因此我们需要最终改变点的大小，来应变画面的缩放。对于针孔相机，缩放因子就是CCD芯片上传感器原件的水平和垂直距离；对于远心相机，缩放因子则是世界坐标系中表示像素的实际大小比例。  
+到目前为止，畸变模型计算的流程就结束了。但是我们可能会有疑问，首先是我们如何计算这五个参数（ $k_1,k_2,k_3,p_1,p_2$ ）；以及外部参数在我们仅仅知道相机的内部参数的情况下，如何计算……等等，这类问题我会留在后面的附录中，不定时更新，有任何问题或者错误都可以填补！🙇‍
+
+## 附录1
 
 
+## 附录2
+文章中的参考链接或文献如下：  
 
+1. https://en.wikipedia.org/wiki/Distortion_(optics)
+2.  ***HALCON*** 《Solution Guide Ⅲ-C 3D Vision》
+3.  ***OpenCV*** https://docs.opencv.org/3.4.1/d9/d0c/group__calib3d.html#ga3207604e4b1a1758aa66acb6ed5aa65d
+4. https://blog.csdn.net/weixin_43956164/article/details/126771627?spm=1001.2014.3001.5501
+5. Zhengyou Z. Flexible Camera Calibration By Viewing a Plane From Unknown Orientations [J] Seventh IEEE International Conference on Computer Vision.IEEE, 1999.DOI:10.1109/ICCV.1999.791289  
 
