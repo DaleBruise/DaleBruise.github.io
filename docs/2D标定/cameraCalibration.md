@@ -130,7 +130,50 @@ $$
 <img src="https://raw.githubusercontent.com/DaleBruise/DaleBruise.github.io/main/docs/images/2D_Calibration/effect_of_distortion.png"/>  
 </div>  
 
-### 2.4、
+### 2.4、应用相机径向畸变后的图像坐标系点->应用相机切向畸变后的图像坐标系点
+相机在一些情况下，可能会出现本身的旋转偏移，这就是前面所提及的切向畸变。在极致平行的外界条件下，是可以不用考虑该步骤的，如果不考虑可以跳过本章节。相机切向畸变的情况如下图所示：  
+<div align=center>
+<img src="https://raw.githubusercontent.com/DaleBruise/DaleBruise.github.io/main/docs/images/2D_Calibration/effect_of_distortion.png"/>  
+</div>  
+
+在不同相机模型的旋转情况下，会使用到不同的模型，***OpenCV***中使用到了**Louhichi_H**团队研究出来的模型，其计算方式如下所示：  
+
+$$
+\begin{bmatrix} u'' \\  
+v'' \\
+1
+\end{bmatrix} 
+= \begin{bmatrix} r_{33}(\tau_x,\tau_y) & 0 & -r_{13}(\tau_x,\tau_y) \\
+0 & r_{33}(\tau_x,\tau_y) & -r_{23}(\tau_x,\tau_y) \\
+0 & 0 & 1  
+\end{bmatrix}
+R(\tau_x,\tau_y)
+\begin{bmatrix} u'\\ 
+v' \\ 
+1 
+\end{bmatrix}
+$$
+
+其中， $R(\tau_x,\tau_y)$ 的定义如下：  
+
+$$
+R(\tau_x,\tau_y) 
+= \begin{bmatrix} cos(\tau_y) & 0 & -sin(\tau_y) \\
+0 & 1 & 0 \\
+sin(\tau_y) & 0 & cos(\tau_y)  
+\end{bmatrix}
+\begin{bmatrix} 1 & 0 & 0 \\
+0 & cos(\tau_x) & sin(\tau_x) \\
+0 & -sin(\tau_x) & cos(\tau_x)  
+\end{bmatrix}
+= \begin{bmatrix} cos(\tau_y) & sin(\tau_y)sin(\tau_x) & -sin(\tau_y)cos(\tau_x) \\
+0 & cos(\tau_x) & sin(\tau_x) \\
+sin(\tau_y) & -cos(\tau_y)sin(\tau_x) & cos(\tau_x)cos(\tau_y)
+\end{bmatrix}
+$$
+
+至此旋转部分的转换就结束了，关于具体的公式和计算原理推导，请参考作者的文献，我们在此不过多讲述。  
+### 2.5、应用相机畸变后的点->真实图像坐标系下的点
 
 
 
