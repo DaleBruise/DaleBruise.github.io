@@ -5,6 +5,7 @@
 <div align=center>
 <img src="https://raw.githubusercontent.com/DaleBruise/DaleBruise.github.io/main/docs/images/2D_Calibration/pinHole.png"/>  
 </div>  
+
 对于小孔成像模型（如上图所示），一般的镜头畸变是由于透镜存在球面像差（由于透镜或者镜子的球形形状引起的像差，使得中心光线和边缘光线有不同的焦点）导致的。比如，我们投影一个直线时，越靠近边缘的部分，直线的弯曲程度就会越大。类似地，根据镜头不同的光学特性，就会有不同的畸变现象。      
 ### 1.1、径向畸变
 我们经常遇到的畸变类型为径向畸变，径向畸变的特性就是从图像中心点出发，与靠近边缘的位置现象越明显，其大致可以分为桶型畸变和枕型畸变。  
@@ -12,10 +13,12 @@
 <div align=center>
 <img src="https://raw.githubusercontent.com/DaleBruise/DaleBruise.github.io/main/docs/images/2D_Calibration/barrel_distortion.png" width="192" height="193">  
 </div>  
+
  - **枕型畸变**中，与桶型畸变相反，图像的放大倍数随着距主光轴（不偏移）的距离而变大，没有穿过图像中心的线条会向内弯曲。凸球面透镜往往就会产生枕型畸变。  
 <div align=center>
 <img src="https://raw.githubusercontent.com/DaleBruise/DaleBruise.github.io/main/docs/images/2D_Calibration/pincushion_distortion.png" width="192" height="193">  
 </div>  
+
 如果我们想要使用数学语言去表达此类畸变的程度，那么一般来讲，我们可以使用二次多项式来表达，他们随着主光轴的距离的平方次增加。后面就会讲到我们如何使用数学方法来补偿畸变带来的误差。
 ### 1.2、切向畸变
 切向畸变是由于感光元件和镜头不平行导致的，我们在程序中进行畸变矫正的过程中，一般不考虑切向畸变。
@@ -24,6 +27,7 @@
 <div align=center>
 <img src="https://raw.githubusercontent.com/DaleBruise/DaleBruise.github.io/main/docs/images/2D_Calibration/chessboard.png" width="210" height="143">  
 </div>  
+
 棋盘格所在平面要和镜头镜头尽量平行，也就是棋盘格所在平面的Z轴要尽量与镜头所在平面垂直，从而我们的精度可以更高。搭建好平台后，我们就可开始对相机进行建模，相机可以视为小孔成像模型，在此模型下，我们使用一个变换矩阵来将实际的坐标点投影到屏幕上：  
 
 $$ sm' = A[R|t]M' $$  
@@ -55,7 +59,7 @@ $$
   - $(c_x, c_y)$ 是图像中心坐标
   - $f_X,f_y$ 是以像素为单位的焦距
 如果我们想要将模型应用在变焦镜头中，由于 $f_x,f_y$ 改变了，所以对于不同焦距的镜头，我们需要进行不同的建模。反之，如果仅仅只是对图像的等比例放大和缩小，那么这个模型就可以反复使用不需要额外改变。
-根据我们上述描述的相机模型，我们可以使用一下流程来对相机畸变的修正：  
+根据我们上述描述的相机模型，我们可以使用以下流程来对相机畸变的修正：  
  1.世界坐标系点(WCS)->相机坐标系点(CCS)  
  2.相机坐标系点->图像坐标系点(IPCS)  
  3.图像坐标系点->应用相机径向畸变后的图像坐标系点  
@@ -87,16 +91,15 @@ $$
 对于小孔成像的相机模型，我们的变换公式为：  
 
 $$
-\binom{u}{v} = \frac{f}{z}\binom{x}{y} + \binom{c_x}{c_y}
+\binom{u}{v} = \frac{f}{z}\binom{x}{y}
 $$
 
 然而对于远心镜头，那么我们的焦距要添加一个负号：  
 
 $$
-\binom{u}{v} = \frac{-f}{z}\binom{x}{y} + \binom{c_x}{c_y}
+\binom{u}{v} = \frac{-f}{z}\binom{x}{y}
 $$
 
-由图pinHole_Model可以看出，***OpenCV***设立的坐标系中相机中心位置为零点。但是我们图像坐标系下，中心坐标并不是零点，所以要在转换点的基础上，补偿中心坐标大小的 $x$ 方向上和 $y$ 方向上的偏差。
 ### 2.3、图像坐标系点->应用相机径向畸变后的图像坐标系点
 相机畸变现象导致的点集偏移误差情况如下图所示。***OpenCV***为我们提供了多项式模型来进行矫正，在***HALCON***中同时提供了多项式模型和除法模型，这两个模型针对不同的情况，无论是线扫相机还是面阵相机，都可以使用。
 对于我们的相机，一般是多项式模型的效果会比较好。其中特别的是，***OpenCV***和***HALCON***的多项式模型不太相同，前者使用的是**Distortion Coefficient**(畸变参数)，后者使用的是**Radial-Tangential**(径向切向)。两者的计算方法不同，***OpenCV***的计算方法为：  
@@ -174,7 +177,7 @@ $$
 
 至此旋转部分的转换就结束了，关于具体的公式和计算原理推导，请参考作者的文献，我们在此不过多讲述。  
 ### 2.5、应用相机畸变后的点->真实图像坐标系下的点
-
+最终，当我们已经完成对畸变的所有处理后，就可以将点转换到图像坐标系下的点集。
 
 
 
