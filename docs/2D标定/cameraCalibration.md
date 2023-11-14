@@ -228,9 +228,10 @@ $$
 其次是最大似然估计：  
 
 $$
-\sum_{i = 1}^{m} \begin{Vmatrix} \mathbf{m_i} - \mathbf{\hat{m}}(\mathbf{A}, k_1, k_2, \mathbf{R_i},t,\mathrm{M_i})\end{Vmatrix}^2
+\sum_{i = 1}^{m} \begin{Vmatrix} \mathbf{m_i} - \mathbf{\hat{m}}(\mathbf{A}, k_1, k_2, k_3, \mathbf{R_i},\mathrm{t},\mathrm{M_i})\end{Vmatrix}^2
 $$
 
+其中， $\mathbf{\hat{m}}(\mathbf{A}, k_1, k_2, k_3, \mathbf{R_i},\mathrm{t},\mathrm{M_i})$ 是点 $\mathrm{M_i}$ 在当前图像下的投影。 
 
 ## 附录2
 文章中的参考链接或文献如下：  
