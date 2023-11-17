@@ -224,19 +224,19 @@ k_3
 \end{bmatrix} = \mathbf{D}\hat{\mathbf{k}}
 $$  
 
-然后我们可以设误差向量 $\mathbf{e}$ 为实际量 $\mathbf{b}$ 向量和估计量向量之间的差：  
+然后我们可以设误差向量 $\mathbf{e}$ 为实际量 $\mathbf{d}$ 向量和估计量向量之间的差：  
 
 $$
-\mathbf{e} = \mathbf{b} - \mathbf{p}  
+\mathbf{e} = \mathbf{d} - \mathbf{p}  
 $$
 
 如果我们想要令我们的偏差最低，就可以先令我们的误差向量代入表达式中，并且函数值等于0：  
 
 $$
-\mathbf{D}(\mathbf{b} - \mathbf{p}) = 0  \\  
-\implies \mathbf{D^\top}\mathbf{b} - \mathbf{D^\top}\mathbf{D}\mathbf{\hat{k}} = 0 \\  
-\implies \mathbf{\hat{k}} = (\mathbf{D^\top}\mathbf{D})^{-1}\mathbf{D}\mathbf{b]
-$$
+\mathbf{D}(\mathbf{d} - \mathbf{p}) = 0 
+\implies \mathbf{D^\top}\mathbf{d} - \mathbf{D^\top}\mathbf{D}\mathbf{\hat{k}} = 0 \\  
+\implies \mathbf{\hat{k}} = (\mathbf{D^\top}\mathbf{D})^{-1}\mathbf{D^\top}\mathbf{d}
+$$  
 
 也就是张正友老师在论文提出的最小二乘模型：  
 
