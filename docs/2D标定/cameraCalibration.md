@@ -188,7 +188,7 @@ $$
 
 ## 附录1
 ### 径向畸变参数计算
-我们需要进行计算的径向畸变参数有三个： $k_1,k_2,k_3$ 。我们设 $(u,v)$ 为没有畸变情况的点， $(\hat{u}, \hat{v})$ 为实际图像点， $(u_0,v_0)$ 为图像中心点（我们默认呜呜差，中心没有畸变现象），由上述内容，我们可以得到如下公式：  
+我们需要进行计算的径向畸变参数有三个： $k_1,k_2,k_3$ 。我们设 $(u,v)$ 为没有畸变情况的点， $(\hat{u}, \hat{v})$ 为实际图像点， $(u_0,v_0)$ 为图像中心点（我们默认无误差，中心没有畸变现象），由上述内容，我们可以得到如下公式：  
 
 $$
 \hat{u} = u + (u-u_0)[k_1r^2 + k_2r^4 + k_3r^6]
@@ -238,9 +238,10 @@ $$
 ## 附录2
 文章中的参考链接或文献如下：  
 
-1. https://en.wikipedia.org/wiki/Distortion_(optics)
+1. 畸变 https://en.wikipedia.org/wiki/Distortion_(optics)
 2.  ***HALCON*** 《Solution Guide Ⅲ-C 3D Vision》
 3.  ***OpenCV*** https://docs.opencv.org/3.4.1/d9/d0c/group__calib3d.html#ga3207604e4b1a1758aa66acb6ed5aa65d
-4. https://blog.csdn.net/weixin_43956164/article/details/126771627?spm=1001.2014.3001.5501
-5. Zhengyou Z. Flexible Camera Calibration By Viewing a Plane From Unknown Orientations [J] Seventh IEEE International Conference on Computer Vision.IEEE, 1999.DOI:10.1109/ICCV.1999.791289  
+4. ***OpenCv***源码解析 https://blog.csdn.net/weixin_43956164/article/details/126771627?spm=1001.2014.3001.5501
+5. Zhengyou Z. Flexible Camera Calibration By Viewing a Plane From Unknown Orientations [J] Seventh IEEE International Conference on Computer Vision.IEEE, 1999.DOI:10.1109/ICCV.1999.791289
+6. 矩阵求导 https://zhuanlan.zhihu.com/p/273729929  
 
