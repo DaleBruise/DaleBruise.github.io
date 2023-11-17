@@ -244,10 +244,7 @@ $$
 \mathbf{k} = (\mathbf{D^\top} \mathbf{D})^{-1}\mathbf{D^\top} \mathbf{d}
 $$
 
-我们在一张棋盘格图像中，可以得到 $m$ 个角点，因此我们也就会有 $m$ 个该方程式。
-
- 
-其次是最大似然估计：  
+我们在一张棋盘格图像中，可以得到 $m$ 个角点，因此我们也就会有 $m$ 个该方程式。我们求解如上式子，就可以得到 $k_1,k_2,k_3$ 的初值。供接下来的最大似然估计来进行求解迭代后的精确参数结果。最大似然估计的模型为：  
 
 $$
 \sum_{i = 1}^{m} \begin{Vmatrix} \mathbf{m_i} - \mathbf{\hat{m}}(\mathbf{A}, k_1, k_2, k_3, \mathbf{R_i},\mathrm{t},\mathrm{M_i})\end{Vmatrix}^2
