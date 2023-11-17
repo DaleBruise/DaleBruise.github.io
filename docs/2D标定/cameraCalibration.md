@@ -215,15 +215,33 @@ k_3
 \end{bmatrix}
 $$
 
-根据张正友老师的理论，我们可以使用最小二乘来解该线性方程式。于是我们列出了以下式子：  
+根据张正友老师的理论，我们可以使用线性最小二乘来解该线性方程组。首先我们可以设估计向量 $\mathbf{}$ 为：  
 
 $$
-\mathbf{Dk} = \mathbf{d}, 
-\mathbf{k} = \begin{bmatrix} k_1 & k_2 & k_3 \end{bmatrix}^\top
-$$
+\mathbf{p} = \mathbf{D}\begin{bmatrix} k_1 \\  
+k_2 \\  
+k_3 
+\end{bmatrix} = \mathbf{D}\hat{\mathbf{k}}
+$$  
+
+然后我们可以设误差向量 $\mathbf{e}$ 为实际量 $\mathbf{b}$ 向量和估计量向量之间的差：  
 
 $$
-\implies \mathbf{k} = (\mathbf{D^\top} \mathbf{D})^{-1}\mathbf{D^\top} \mathbf{d}
+\mathbf{e} = \mathbf{b} - \mathbf{p}  
+$$
+
+如果我们想要令我们的偏差最低，就可以先令我们的误差向量代入表达式中，并且函数值等于0：  
+
+$$
+\mathbf{D}(\mathbf{b} - \mathbf{p}) = 0  \\  
+\implies \mathbf{D^\top}\mathbf{b} - \mathbf{D^\top}\mathbf{D}\mathbf{\hat{k}} = 0 \\  
+\implies \mathbf{\hat{k}} = (\mathbf{D^\top}\mathbf{D})^{-1}\mathbf{D}\mathbf{b]
+$$
+
+也就是张正友老师在论文提出的最小二乘模型：  
+
+$$
+\mathbf{k} = (\mathbf{D^\top} \mathbf{D})^{-1}\mathbf{D^\top} \mathbf{d}
 $$
 
 我们在一张棋盘格图像中，可以得到 $m$ 个角点，因此我们也就会有 $m$ 个该方程式。
