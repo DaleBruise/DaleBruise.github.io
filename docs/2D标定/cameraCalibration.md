@@ -298,7 +298,7 @@ $$
 然而，我们使用的是经过 **LM** 算法优化的最小二乘迭代，所以上述式子会稍许不太一样，如下所示：  
 
 $$
-(\mathbf{J^{\top}J} + \miu\mathbf{I})h_{lm} = -\mathbf{J^{\top}f} and \mu \geq 0
+(\mathbf{J^{\top}J} + \mu\mathbf{I})h_{lm} = -\mathbf{J^{\top}f} \, and \, \mu \geq 0
 $$
 
 其中 $\mu$ 是一个限制因子，从而根据得分来控制我们迭代的速度。这个得分 $\rho$ 的计算方式如下：  
