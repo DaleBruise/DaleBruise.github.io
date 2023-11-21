@@ -283,7 +283,31 @@ $$
 & = F(x) + \mathbf{h^{\top}J^{\top}f}+ \frac{1}{2}\mathbf{h^{\top}J^{\top}Jh} \end{aligned}  
 $$
 
+通过高斯牛顿优化方法原理，我们需要得到 $L(h)$ 的*jacobin*矩阵和*Hessian*矩阵：  
 
+$$
+\mathbf{L'(h)} = \mathbf{J^{\top}f} + \mathbf{J^{\top}Jh},\  \mathbf{L''(h)} = \mathbf{J^{\top}J}.
+$$
+
+我们通过输入高斯扭断的上一次迭代参数 $\mathbf{}h_{gn}$ 来进行下一次迭代，因此我们需要求出下面这个式子：  
+
+$$
+\mathbf{(J^{\top}J)h_{gn}} = -\mathbf{J^{\top}f}
+$$
+
+然而，我们使用的是经过 **LM** 算法优化的最小二乘迭代，所以上述式子会稍许不太一样，如下所示：  
+
+$$
+(\mathbf{J^{\top}J} + \miu\mathbf{I})h_{lm} = -\mathbf{J^{\top}f} and \miu \geq 0
+$$
+
+其中 $\miu$ 是一个限制因子，从而根据得分来控制我们迭代的速度。这个得分 $\rho$ 的计算方式如下：  
+
+$$
+\rho = \frac{F(\mathbf{x}) - F(\mathbf{x + h_lm})}{L(0) - L(\mathbf{h_lm})}
+$$
+
+根据上式中 $L$ 模型的特性，我们可以知道这个得分是一个大概率大于0的值，算法会根据这个得分来更改 $\miu$ 的值来控制迭代的速度。从而能够更加准确地估计出我们想要的参数。具体的推导流程和算法流程，可以参考 *K.Madsen* 的文献，名称会贴到附录2中。
 
 ## 附录2
 文章中的参考链接或文献如下：  
@@ -293,5 +317,6 @@ $$
 3.  ***OpenCV*** https://docs.opencv.org/3.4.1/d9/d0c/group__calib3d.html#ga3207604e4b1a1758aa66acb6ed5aa65d
 4. ***OpenCv***源码解析 https://blog.csdn.net/weixin_43956164/article/details/126771627?spm=1001.2014.3001.5501
 5. Zhengyou Z. Flexible Camera Calibration By Viewing a Plane From Unknown Orientations [J] Seventh IEEE International Conference on Computer Vision.IEEE, 1999.DOI:10.1109/ICCV.1999.791289
-6. 矩阵求导 https://zhuanlan.zhihu.com/p/273729929  
+6. 矩阵求导 https://zhuanlan.zhihu.com/p/273729929
+7. LM最小二乘优化 Note L. Methods for Non-Linear Least Squares Problems[J] Lecture Note [2023-11-21]
 
