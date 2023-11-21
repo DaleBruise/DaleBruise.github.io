@@ -245,13 +245,45 @@ $$
 \mathbf{k} = (\mathbf{D^\top} \mathbf{D})^{-1}\mathbf{D^\top} \mathbf{d}
 $$
 
-我们在一张棋盘格图像中，可以得到 $m$ 个角点，因此我们也就会有 $m$ 个该方程式。我们求解如上式子，就可以得到 $k_1,k_2,k_3$ 的初值。供接下来的最大似然估计来进行求解迭代后的精确参数结果。最大似然估计的模型为：  
+我们在一张棋盘格图像中，可以得到 $m$ 个角点，因此我们也就会有 $m$ 个该方程式。我们求解如上式子，就可以得到 $k_1,k_2,k_3$ 的初值。供接下来的非线性最小二乘法来进行求解迭代后的精确参数结果，其模型为：  
 
 $$
-\sum_{i = 1}^{m} \begin{Vmatrix} \mathbf{m_i} - \mathbf{\hat{m}}(\mathbf{A}, k_1, k_2, k_3, \mathbf{R_i},\mathrm{t},\mathrm{M_i})\end{Vmatrix}^2
+\sum_{i = 1}^{m} \begin{Vmatrix} \mathbf{m_i} - \mathbf{\hat{m}}(\mathbf{A}, k_1, k_2, k_3, \mathbf{R},\mathrm{t},\mathrm{M})\end{Vmatrix}^2
 $$
 
-其中， $\mathbf{\hat{m}}(\mathbf{A}, k_1, k_2, k_3, \mathbf{R_i},\mathrm{t},\mathrm{M_i})$ 是点 $\mathrm{M_i}$ 在当前图像下的投影。 
+其中， $\mathbf{\hat{m}}(\mathbf{A}, k_1, k_2, k_3, \mathbf{R},\mathrm{t},\mathrm{M})$ 是点 $\mathrm{M}$ 在当前图像下的投影。那么我们令 $\mathbf{f(k)} = \mathbf{m_i} - \mathbf{\hat{m}}(\mathbf{A}, k_1, k_2, k_3, \mathbf{R},\mathrm{t},\mathrm{M})$ ，其中 $\mathbf{f}$ 是一个含有三个未知量的标准差函数向量。我们想要找到最小的标准差对应的三个未知量的值，那么就是：  
+
+$$
+x^* = argmax_x{F(x)}，
+$$
+
+其中， $F(x)$ 的定义为：  
+
+$$
+F(x) = \frac{1}{2}\sum_{i = 1}^{m}(f_i(x))^2 = \frac{1}{2} {\begin{Vmatrix} \mathbf{f(x)} \end{Vmatrix}} ^ 2 = \frac{1}{2}\mathbf{f(x)}^{\top}\mathbf{f(x)}.
+$$
+
+默认 $\mathbf{f}$ 是连续二阶可导的函数的情况下，我们就可以对其进行泰勒一阶展开，并且利用雅可比矩阵表示，可以得到：  
+
+$$
+\mathbf{f(x + h)} = \mathbf{f(x)} + \mathbf{J(x)h} + o({\begin{Vmatrix} \mathbf{h} \end{Vmatrix}} ^ 2)
+$$
+
+然后我们假设有一个模型 $L$ 来表示 $F$ 在当前迭代 $x$ 的领域中的行为，那么：  
+  
+$$
+\mathbf{f(x+h)} \simeq l\mathrm{h} \equiv \mathbf{f(x)} + \mathbf{J(x)h}
+$$
+  
+由此，我们可以得到：  
+
+$$
+\begin{aligned} F(\mathbf{x+h}) \simeq L(\mathbf{h}) & \equiv \frac{1}{2}l(h)^{\top}l(\mathbf{h}) \\  
+& = \frac{1}{2}\mathbf{f^{\top}f} + \mathbf{h^{\top}J^{\top}f} + \frac{1}{2}\mathbf{h^{\top}J^{\top}Jh} \\  
+& = F(x) + \mathbf{h^{\top}J^{\top}f}+ \frac{1}{2}\mathbf{h^{\top}J^{\top}Jh} \end{aligned}  
+$$
+
+
 
 ## 附录2
 文章中的参考链接或文献如下：  
