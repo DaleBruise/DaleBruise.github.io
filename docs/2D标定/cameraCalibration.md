@@ -230,10 +230,11 @@ $$
 \mathbf{e} = \mathbf{d} - \mathbf{p}  
 $$
 
-如果我们想要令我们的偏差最低，就可以先令我们的误差向量代入表达式中，并且函数值等于0：  
+由于估计量向量 $\mathbf{p}$ 是子空间 $V$ 的基向量线性组合而成的，因此 $\mathbf{e} \bot \mathbf{v}$ 并且, $\forall\mathbf{v}\in V$ 。
+也就是 $\mathbf{D^\top}\mathbf{e} = 0$ ，进一步，有：  
 
 $$
-\mathbf{D}(\mathbf{d} - \mathbf{p}) = 0 
+\mathbf{D^\top}(\mathbf{d} - \mathbf{p}) = 0 
 \implies \mathbf{D^\top}\mathbf{d} - \mathbf{D^\top}\mathbf{D}\mathbf{\hat{k}} = 0 \\  
 \implies \mathbf{\hat{k}} = (\mathbf{D^\top}\mathbf{D})^{-1}\mathbf{D^\top}\mathbf{d}
 $$  
