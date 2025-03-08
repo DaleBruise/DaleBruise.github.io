@@ -2,9 +2,7 @@
 
 包含一些随机选择的telegraph的报道，用以提升英文阅读水平（考研英语）。
 
-## 1.*Starmer accused of double standards after scrapping Latin programme* 2025.3.8
-
-url : [Starmer accused of ......](https://www.telegraph.co.uk/politics/2025/03/07/starmer-accused-double-standards-scrapping-latin-programme/?&ICID=continue_without_subscribing_reg_first)
+## [Starmer accused of double standards after scrapping Latin programme](https://www.telegraph.co.uk/politics/2025/03/07/starmer-accused-double-standards-scrapping-latin-programme/?&ICID=continue_without_subscribing_reg_first) 2025.3.8
 
 ### Ministers opted to scrap funding for it last month, with the Department for Education (DfE) saying it was one of many “tough decisions” it has been forced to make because of the "fiscal situation the new Government inherited".
 
