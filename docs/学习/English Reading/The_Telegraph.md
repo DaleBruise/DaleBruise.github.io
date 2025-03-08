@@ -1,6 +1,6 @@
 # 1.*Starmer accused of double standards after scrapping Latin programme*
 
-url:https://www.telegraph.co.uk/politics/2025/03/07/starmer-accused-double-standards-scrapping-latin-programme/?&ICID=continue_without_subscribing_reg_first
+url : [Starmer accused of ......](https://www.telegraph.co.uk/politics/2025/03/07/starmer-accused-double-standards-scrapping-latin-programme/?&ICID=continue_without_subscribing_reg_first)
 
 ### Ministers opted to scrap funding for it last month, with the Department for Education (DfE) saying it was one of many “tough decisions” it has been forced to make because of the "fiscal situation the new Government inherited".
 
