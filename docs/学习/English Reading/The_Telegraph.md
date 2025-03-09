@@ -27,3 +27,14 @@
 
 - alongside prep. 同时
 - a fall of 1 per cent ... and a 9 per cent drop compared with ...
+
+
+## [Scientists discuss new habitats for mammoth revival](https://www.telegraph.co.uk/science/2025/03/08/scientists-discuss-new-habitats-for-mammoth-revival/) 2025.3.9
+
+### When scientists first mooted the idea of bringing back the mammoth, it was met with raised eyebrows and widespread incredulity among the scientific community.
+
+- moot v. 提出......以供讨论
+
+### “We’ve confirmed our hypotheses that these are the genes that we want to target for the mammoth project.”
+
+- hypothesis n. 假设
