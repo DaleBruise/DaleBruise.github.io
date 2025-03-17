@@ -1,4 +1,4 @@
-# New_York_Times
+# New York Times
 
 包含一些随机选择的New York Times的报道。
 
