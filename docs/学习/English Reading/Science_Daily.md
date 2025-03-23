@@ -30,3 +30,14 @@
 
 - complementary adj. 互助的；相互辅佐的
 
+
+
+## [Why don't we remember being a baby? New study provides clues](https://www.sciencedaily.com/releases/2025/03/250320144619.htm) 2025.3.23
+
+### The findings, published March 20 in _Science,_ indicate that memories can indeed be encoded in our brains in our first years of life.
+
+- indicate v. 表明
+
+### And in past animal studies, researchers have shown that the statistical learning pathway, which is found in the more anterior part of the hippocampus (the area closer to the front of the head), develops earlier than that of episodic memory.
+
+- anterior adj. 前部的
