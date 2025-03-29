@@ -38,3 +38,21 @@
 ### “We’ve confirmed our hypotheses that these are the genes that we want to target for the mammoth project.”
 
 - hypothesis n. 假设
+
+
+## [Nigel Farage pledges ban on civil servants WFH as he demands UK equivalent of Doge](https://www.telegraph.co.uk/politics/2025/03/29/nigel-farage-ban-civil-servants-wfh-uk-doge/) 2025.3.29
+
+### Nigel Farage has pledged a ban on civil servants working from home as he proposed a British version of Elon Musk’s controversial cost-cutting department of government efficiency (Doge) during a keynote speech for Reform UK.
+
+- pledge v. 保证
+- civil servant 公务员
+
+### Frankly folks, what we need in this country to pay for the cuts that people deserve and need, we need a British form of Doge, as Elon Musk has got in America. 
+
+- 坦率地说，我们国家需要的是支付人们应当得到和需要的削减支出。我们需要英国形式的Doge，就像Elon Musk那样在美国拥有的。
+
+### The Reform UK local election campaign comes ahead of the local council elections on May 1 where Reform will contest nearly all 1,600 council seats up for re-election.
+
+- contest v. 争夺
+- up for the re-election 支持连坐的。。。。。。
+
