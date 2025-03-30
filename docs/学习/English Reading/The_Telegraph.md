@@ -56,3 +56,42 @@
 - contest v. 争夺
 - up for the re-election 支持连坐的。。。。。。
 
+
+
+## [Europeans don't want American cars. Trump thinks he can change that.](https://www.telegraph.co.uk/business/2025/03/28/europeans-dont-want-american-cars-trump/) 2025.3.30
+
+### Donald Trump’s decision to slap 25pc tariffs on car imports is at one level aimed at encouraging more of his countrymen to buy American vehicles.
+
+- tariff n. 关税
+
+### Trump is hoping that his barrage of import duties will pile enough pressure on manufacturers to trigger a reversal of this decades-old deficit.
+
+- barrage of 一连串的
+- pile v. 对叠在一起
+- deficit n. 赤字
+
+### However, while the president’s tariffs might conceivably lead some Americans to reconsider buying a $100,000-plus Mercedes or Range Rover, they’re also likely to prompt tit-for-tat levies that could further undermine US exports.
+
+- conceivable adj. 可以想象的
+- levy n. 关税
+- tit-for-tat 以牙还牙；针锋相对
+- prompt v. 引发；导致
+
+### Americans have long desired European mainstays such as BMWs, Ferraris and Fiats, as well as keenly priced family models from Japan.
+
+- mainstay n. 主要部分；支柱
+- keenly adv. 渴望地
+
+
+### When Trump asked last month, “how many Chevrolets or Fords do you see in the middle of Munich?”, he is unlikely to have registered how many US models would actually fit through the city’s narrower streets.
+
+- register v. 注意到；显示；表达
+
+### For US automakers, he warned that the import duties are likely to distance firms once at the heart of the American economy from the shift to EVs and self-driving vehicles, with one clear consequence.
+
+- distance v. 远离
+- duty n. 关税
+- distance from 从……远离……
+
+
+
