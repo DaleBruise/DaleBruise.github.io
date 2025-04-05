@@ -49,3 +49,28 @@
 - condemn v. 谴责
 
 
+
+## [Trump Tariffs: What You Need to Know if You’re Buying a Car](https://cars.usnews.com/cars-trucks/advice/trump-tariffs-what-you-need-to-know-if-youre-buying-a-car) 2025-4-5
+
+### Perhaps no other segment will be hit as hard as the auto industry, and consumers, who will end up paying more out of pocket for a wide swath of goods, will share their pain.
+
+- swath n. 一长条地；一大堆
+- 也许没有其他的行业会受到像汽车行业般的打击，并且消费者会最终为他们的商品付更多的钱，然后会分享他们的痛苦。
+
+### Vehicles will also be more expensive to repair after a collision, which is likely to drive auto insurance prices higher.
+
+- collision n. 撞击
+
+### Many auto parts cross multiple borders as they’re integrated into pricier, more complex components, such as wiring harnesses, infotainment systems and powertrains
+
+- harness n. 保护带；系带
+- infotainment n. 娱乐信息节目
+
+### Makers of electric vehicles offering products with slim, or even non-existent, profit margins may have to rethink their product plans in light of their already premium prices compared to gas-powered vehicles.
+
+- premium n. 保险费；adj. 高价的；高品质的
+- in light of 基于某种情况或信息，考虑到某事或在某种情况下
+
+### There are, of course, still deals to be had on pre-tariff vehicles in low demand or with high inventories, which might explain Ford’s surprising “Employee Pricing for Everyone” slate of deals, which came out on April 3.
+
+- 当然，一些在征收关税前的低需求和高库存的车仍然有交易可以做。这也就解释了为什么福特在4月3日推出的“面向所有人的员工价格”交易。
