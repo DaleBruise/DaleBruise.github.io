@@ -74,3 +74,45 @@
 ### There are, of course, still deals to be had on pre-tariff vehicles in low demand or with high inventories, which might explain Ford’s surprising “Employee Pricing for Everyone” slate of deals, which came out on April 3.
 
 - 当然，一些在征收关税前的低需求和高库存的车仍然有交易可以做。这也就解释了为什么福特在4月3日推出的“面向所有人的员工价格”交易。
+
+
+
+
+
+## [How Bad Is Inflation? A Quick Data Snapshot](https://money.usnews.com/money/personal-finance/articles/how-bad-is-inflation-tracking-the-price-of-eggs-housing-and-gas) 2025.4.13
+
+### The latest data suggests that price hikes may be cooling off, largely driven by a sharp fall in energy costs, but it’s unclear whether that trend will persist in the face of tariffs and other economic policy changes.
+
+- 最新数据显示，价格上涨可能正在降温，主要是受能源成本大幅下降的推动，但目前尚不清楚，在关税和其他经济政策变化的情况下，这种趋势是否会持续下去。
+
+
+## [These Are the Lawsuits Against Trump's Executive Orders](https://www.usnews.com/news/national-news/articles/how-many-of-trumps-executive-orders-are-being-challenged) 2025.4.13
+
+### President Donald Trump unleashed a flurry of executive orders when he returned to the Oval Office, ranging from withdrawing the U.S. from the Paris Agreement on climate to ending diversity, equity and inclusion programs in the federal government.
+
+- flurry n. 一阵忙乱；骚动；（同时出现的）一系列事物
+- executive adj. 行政的；高档的
+
+### The executive orders, however, didn’t make everyone happy, and lawsuits immediately started piling up.
+
+- lawsuit n. 起诉
+- pile up 积累起来
+
+### Trump signed an executive order to reinstate the “Schedule F” classification for certain federal employees.
+
+- reinstate v. 使恢复
+
+### The White House said the order “expands individual opportunity by terminating radical DEI preferencing in federal contracting and directing federal agencies to relentlessly combat private sector discrimination.”
+
+- relentlessly adv. 不屈不挠地；坚持不懈地
+
+### The National Association of Diversity Officers in Higher Education and others allege that Trump’s orders suppress free speech and threaten millions in federal grant money appropriated by Congress.
+
+- allege v. 宣称，指控
+
+### It said that “the Armed Forces have been afflicted with radical gender ideology to appease activists unconcerned with the requirements of military service like physical and mental health, selflessness, and unit cohesion.”
+
+- afflict v. 折磨；困扰
+- ideology n. 意识形态
+- appease v. 平息；缓解
+
