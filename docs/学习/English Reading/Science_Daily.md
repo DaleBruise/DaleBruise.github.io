@@ -41,3 +41,26 @@
 ### And in past animal studies, researchers have shown that the statistical learning pathway, which is found in the more anterior part of the hippocampus (the area closer to the front of the head), develops earlier than that of episodic memory.
 
 - anterior adj. 前部的
+
+
+## [A new robotic gripper made of measuring tape is sizing up fruit and veggie picking](https://www.sciencedaily.com/releases/2025/04/250409154638.htm) 2025.4.19
+
+- gripper n. 爪子；钳子
+
+### The grippers would be a particularly good fit for agriculture applications, as their extremities are soft enough to grab fragile fruits and vegetables, researchers wrote.
+
+- extremity n. 四肢
+
+### Existing grippers that can expand are bulky because they need additional mechanisms to get gripping appendages to expand.
+
+- bulky adj. 笨拙的；大块头的
+
+### Each spool is rolled up, in a compact configuration, with only a small part extending out in a triangle shape to form a finger.
+
+- compact adj.小型的；紧凑的
+- spool n. 卷轴
+
+### The researchers had already worked with measuring tape as part of a grant from the National Science Foundation to investigate soft materials that could bend while holding their shape. Measuring tape is springy -- you can bend it any way you want and it goes back to its original state.
+
+- grant n. 补助金；土地
+- springy adj. 有弹力的
