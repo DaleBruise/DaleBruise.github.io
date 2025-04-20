@@ -64,3 +64,27 @@
 
 - grant n. 补助金；土地
 - springy adj. 有弹力的
+
+## [Hopping gives this tiny robot a leg up](https://www.sciencedaily.com/releases/2025/04/250409154610.htm) 2025.4.20
+
+- hop v. 单腿跳
+### Engineers developed an insect-sized jumping robot that can traverse challenging terrains and carry heavy payloads
+
+- traverse v. 穿越；横跨
+- terrain n. 地带；贫瘠的土地
+
+### However, as they move through the rubble, tiny crawling robots might encounter tall obstacles they can't climb over or slanted surfaces they will slide down. 
+
+- rubble n. 碎石
+- slanted adj. 倾斜的
+
+### As the robot hops, it follows a ballistic trajectory, arcing through the air. At the peak of that trajectory, it estimates its landing position.
+
+- ballistic adj. 弹道的
+- trajectory n. 轨迹
+
+### Due to its small size and light weight, the robot has an even smaller moment of inertia, which makes it more agile than a larger robot and better able to withstand collisions.
+
+- inertia n. 不活动
+- agile adj. 灵活的
+- withstand v. 承受住
