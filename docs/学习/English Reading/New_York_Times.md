@@ -116,3 +116,30 @@
 - ideology n. 意识形态
 - appease v. 平息；缓解
 
+
+## [GB News outcasts take fight for the Right on to YouTube](https://www.telegraph.co.uk/business/2025/04/26/the-gb-news-rejects-trying-to-conquer-youtube/) 2025.4.27
+
+### But as UK news outlets move ever further into opinion-led programming and maintain their hold over audiences, can this new breed of influencers repeat the trick here?
+
+- outlet v. 市场；出口
+- breed n. 培育
+
+### He is currently embroiled in a High Court case over allegations
+
+- allegation n. 指控
+- embroil v. 使卷入
+
+### Would-be British influencers are now trying to mimic the trend as they capitalise on what they view as dwindling trust in conventional media outlets.
+
+- capitalise v. 使变现
+- dwindling adj. 逐渐变小的  
+- mimic v. 模仿；学。。。。。的样子
+
+### But for the GB News rejects and other alt-Right figures, the move to social media reflects a desire to exert influence over the political right with viewpoints that would not be allowed on regulated broadcast TV.
+
+- exert v. 努力；运用
+
+### “But it’s just happening to a much smaller extent here because the news brands are much stronger.”
+
+- extent n. 面积；程度；大小
+
