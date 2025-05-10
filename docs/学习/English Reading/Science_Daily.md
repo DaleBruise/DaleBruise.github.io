@@ -88,3 +88,38 @@
 - inertia n. 不活动
 - agile adj. 灵活的
 - withstand v. 承受住
+
+
+## [Mammal's lifespans linked to brain size and immune system function, says new study](https://www.sciencedaily.com/releases/2025/05/250508112728.htm) 2025.5.10
+
+- lifespan n. 寿命
+
+### Their findings show how broad genomic changes, rather than individual genes, shape longevity.
+
+- genomic n. 基因学
+
+### The maximum lifespan potential (MLSP) is the longest ever recorded lifespan of a species, rather than the average lifespan, which is affected by factors such as predation and availability of food and other resources.
+
+- predation n. 掠食行为
+
+
+
+## [Landmark experiment sheds new light on the origins of consciousness](https://www.sciencedaily.com/releases/2025/04/250430142233.htm) 2025.5.10
+
+### The findings were published today in Nature and mark a pivotal moment in the goal to understand the elusive origins consciousness.
+
+- elusive adj. 难以捉摸的
+
+### In other words, intelligence is about doing while consciousness is about being.
+
+- 换句话说，智力关乎做事，而意识关乎存在
+
+### This discovery has implications for how we understand consciousness and may shed light on disorders of consciousness such as comas or vegetative states.
+
+- shed light on 阐明，解释
+- shed v.  摆脱；使流露出
+
+### It was clear that no single experiment would decisively refute either theory.
+
+- decisively adv. 果断地
+- refute v. 反驳
