@@ -94,4 +94,46 @@
 - distance from 从……远离……
 
 
+## [Skilled migrants will need degrees to come to UK](https://www.telegraph.co.uk/news/2025/05/11/skilled-migrants-will-need-degrees-to-come-to-uk/) 2025.5.11
+
+### These areas are deemed by the Government to be suffering shortages that are damaging the economy.
+
+- deem v. 认为
+- 这些领域被政府认为是深陷缺陷，并且正在损害经济
+
+### Writing for The Telegraph, Yvette Cooper, the Home Secretary, said the new system would be underpinned by “five core principals”.
+
+- underpin v. 加固...的基础；支持
+
+### Finally, the system must support integration and community cohesion.
+
+- cohesion n.  团结
+
+### Employers in sectors with labour shortages will face being stripped of their visa-sponsor licence, which is needed to hire someone from outside the UK, if they fail to show they are investing in training the domestic workforce.
+
+- sector n. 行业
+- strip v. 除去
+
+### The plans will be set out in a long-awaited immigration white paper on Monday, which aims to fulfil Labour’s manifesto pledge to significantly reduce net migration. 
+
+- manifesto n. 宣言
+- pledge n. 诺言
+
+### Labour ministers will accuse the Tories of presiding over an influx of lower skilled workers that pushed up net migration to a record 906,000 in the year ending June 2023.
+
+- preside v. 担任主席
+- influx n. 大量涌入
+
+### Employers will still be subject to the points system salary thresholds, which stipulate that they pay a minimum of £38,700 or down to £30,960 for occupations suffering shortages.
+
+- subject adj. 可能遭受
+- stipulate v. 规定
+
+
+### It is designed to stamp out the “ad hoc” decisions of judges where human rights have trumped public interest or safety, and which have been exposed over the past three months by The Telegraph.
+
+- stamp v. 盖章
+- stamp out 熄灭；泯灭
+- trump v. 打败；胜过
+- ad hoc 临时的
 
