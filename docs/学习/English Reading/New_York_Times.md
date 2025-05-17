@@ -143,3 +143,23 @@
 
 - extent n. 面积；程度；大小
 
+
+
+## [How Medical Schools Are Improving Access for Underrepresented Minorities](https://www.usnews.com/education/best-graduate-schools/articles/how-medical-schools-are-improving-access-for-underrepresented-minorities) 2025.5.17
+
+- underrepresented minorities adj. 代表性不足的少数族裔 
+
+### Black or African American students made up 7% of total matriculants in 2024-2025, down from 10% in 2023-2024; matriculants of Hispanic, Latino or Spanish origin comprised 5.9% of total matriculants in 2024-2025, down from 12.7% the previous year; and Native American or Alaska Native students made up .15% of total matriculants in 2024-2025, down from 1.1% in 2023-2024.
+
+- matriculant n. 被录取的新生
+- comprise v. 包括；构成
+
+## As federal diversity efforts are rolled back, medical schools are reconsidering or removing diversity essay prompts, raising concerns about equitable representation in medicine.
+
+- roll back 击退
+- equitable adj. 适当的
+
+### Some pathway programs de-emphasize or waive the MCAT and aim to improve health outcomes by recruiting diverse students, particularly those underrepresented in medicine, economically disadvantaged or first-generation college graduates.
+
+- waive v. 撤销
+- pathway adj. 小路
