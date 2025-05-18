@@ -123,3 +123,23 @@
 
 - decisively adv. 果断地
 - refute v. 反驳
+
+
+## [AI overconfidence mirrors human brain condition](https://www.sciencedaily.com/releases/2025/05/250515132458.htm) 2025.5.18
+
+### A similarity between language models and aphasia points to diagnoses for both
+
+- aphasia n. 失语症
+
+### As more and more people come to use and rely on such things, there's an ever-increasing need to make sure that these tools deliver correct and coherent responses and information to their users.
+
+- coherent adj. 相互连贯的
+
+### If the user is not sufficiently knowledgeable about the subject area in question, they can easily fall foul of assuming this information is right, especially given the high degree of confidence ChatGPT and others show.
+
+- foul adj. 令人不快的
+
+### When there's a curve, the ball may roll down and come to rest, but when the curves are shallow, the ball may roll around chaotically.
+
+- shallow adj. 浅的；微弱的
+
