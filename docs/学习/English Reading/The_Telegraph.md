@@ -137,3 +137,18 @@
 - trump v. 打败；胜过
 - ad hoc 临时的
 
+
+## [Wave goodbye to the British middle classed, exploited to extinction under Starmer](https://www.telegraph.co.uk/news/2025/05/23/british-middle-classes-exploited-extinction-under-starmer/) 2025.5.24
+
+### The socialist motivations are plain to see in the demeaning clause in the Chagos agreement, which obliges Britain to be “mindful of the need to complete the process of decolonisation of Mauritius”, even though the islands have never been part of the East African country’s territory.
+
+- demeaning adj. 降低身份的
+- clause n. 条款
+- oblige v. 强迫
+- decolonisation n. 非殖民地化
+
+### If you were ever in any doubt as to the level of hatred Labour reserves for successful, aspirational people like you and me, then just look at the contents of Deputy Prime Minister Angela Rayner’s leaked memo.
+
+- hatred adj. 有仇恨的
+- aspirational adj. 有抱负的
+
