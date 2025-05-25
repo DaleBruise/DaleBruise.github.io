@@ -163,3 +163,22 @@
 
 - waive v. 撤销
 - pathway adj. 小路
+
+
+
+## [Is It a Buyer's or a Seller's Market?](https://realestate.usnews.com/real-estate/articles/buyers-or-sellers-market) 2025.5.25
+
+### Although lending rates for the standard 30-year fixed-rate mortgage have ranged mostly from 6.6% to 6.99% in recent weeks, existing home sales have fallen while new home sales have rebounded, thanks mostly to homebuilders selling lower-priced homes and offering generous incentives
+
+- mortgage n. 抵押贷款
+- rebound v. 反弹
+- incentive n. 刺激
+
+### Some of these common metrics include changes in sales prices, sales, inventory, months of supply and days on market.
+
+- metric n. 公制
+
+### However, detractors like Leo Pareja, CEO of eXp Realty, suggest that such exclusions hurt others and limit transparency, impacting potential comps for appraisers working for mortgage lenders.
+
+- exclusion n. 排除在外
+- transparency n. 透明
