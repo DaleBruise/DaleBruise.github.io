@@ -143,3 +143,20 @@
 
 - shallow adj. 浅的；微弱的
 
+
+## [AI-designed DNA controls genes in healthy mammalian cells for first time](https://www.sciencedaily.com/releases/2025/05/250508112324.htm) 2025.6.1
+
+- mammalian adj. 哺乳动物的
+
+### The study could lead to new ways for gene-therapy developers to boost or dampen the activity of genes only in the cells or tissues that need adjusting. It also paves the way for new strategies to fine-tune a patient's genes and make treatments more effective and reduce side effects.
+
+- dampen v. 使......弄湿；抑制
+- fine-tune v. 对进行微调；调整
+
+
+## [Engineering a robot that can jump 1- feet high -- without legs](https://www.sciencedaily.com/releases/2025/04/250423164027.htm) 2025.6.1
+
+### Their device, a silicone rod with a carbon-fiber spine, can leap 10 feet high even though it doesn't have legs. The researchers made it after watching high-speed video of nematodes pinching themselves into odd shapes to fling themselves forward and backward.
+
+- spine n. 脊柱
+- pinch v. 捏；紧闭
