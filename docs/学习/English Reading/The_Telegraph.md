@@ -152,3 +152,14 @@
 - hatred adj. 有仇恨的
 - aspirational adj. 有抱负的
 
+
+## [Badenoch: Let bosses ban burkas in the workplace](https://www.telegraph.co.uk/politics/2025/06/07/kemi-badenoch-let-bosses-ban-burkas-in-workplace/) 2025.6.8
+
+### The Tory leader also hit out at sharia courts and first-cousin marriage for acting as an “insidious” barrier to integration.
+
+- insidious adj. 潜伏的
+- hit out 抨击
+
+### However, they could face legal challenges under equality and human rights laws if they were to tell staff to remove burkas or niqabs, on the grounds that they were discriminating against a religious belief.
+
+- discriminate v. 区别对待
