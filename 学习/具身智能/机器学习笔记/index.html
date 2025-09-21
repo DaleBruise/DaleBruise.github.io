@@ -1,0 +1,2160 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/">
+      
+      
+        <link rel="next" href="../../../%E9%AA%91%E8%A1%8C/%E6%9C%89%E6%B0%A7%E8%AE%AD%E7%BB%83%E6%96%B9%E6%B3%95/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>机器学习笔记 - Fangrb's cite</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.e53b48f4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Fangrb&#39;s cite" class="md-header__button md-logo" aria-label="Fangrb's cite" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Fangrb's cite
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              机器学习笔记
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Fangrb&#39;s cite" class="md-nav__button md-logo" aria-label="Fangrb's cite" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Fangrb's cite
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Welcome to Fangrb's Cite 🧠
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    2D标定
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            2D标定
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2D%E6%A0%87%E5%AE%9A/cameraCalibration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    相机标定流程和相关原理
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    AI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            AI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../AI/overlook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1. 人工智能总览
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    学习
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            学习
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Index
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    3D 视觉 
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            3D 视觉 
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3D%20%E8%A7%86%E8%A7%89%20/Dyn%20HaMR/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dyn-HaMR: Recovering 4D Interacting Hand Motion
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    English Reading
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            English Reading
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../English%20Reading/New_York_Times/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    New York Times
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../English%20Reading/Science_Daily/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Science Daily
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../English%20Reading/The_Telegraph/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Telegraph
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    具身智能
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            具身智能
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    学习路线
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    机器学习笔记
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    机器学习笔记
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1 回归与逻辑回归
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1 回归与逻辑回归">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 回归的定义与构建回归模型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-r-squared" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 R-squared
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 多元回归与回归中的多重共线性
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4 回归中各变量的影响力
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5 构建多元回归模型的步骤(总结)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6 逻辑回归模型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7 逻辑回归线的准确率
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.8 多元逻辑回归的多重共线性和个体影响力
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 决策树
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2 决策树">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 什么是决策树？决策树的分类准则是什么？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 决策树算法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 过拟合问题
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 模型选择和交叉验证
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3 模型选择和交叉验证">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 构建模型的步骤
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 模型验证指标：回归
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 模型验证指标：分类
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 权衡偏差与方差
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5 交叉验证
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4 聚类分析
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4 聚类分析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 无监督学习
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-k-means" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 K-means聚类
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 聚类簇数量的选取
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-boosting" class="md-nav__link">
+    <span class="md-ellipsis">
+      5 随机森林和Boosting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5 随机森林和Boosting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 集成模型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 随机森林
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-boosting" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3 Boosting算法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-adaboosting" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.4 AdaBoosting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55-gradient-boosting" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.5 Gradient Boosting
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6 人工神经网络
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6 人工神经网络">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 逻辑回归的网路图
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 决策边界的概念
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3 多决策边界问题及其解决方案
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.4 神经网络算法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.4 神经网络算法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      隐藏结点的数量问题
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      反向传播算法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      反向传播算法中的数学计算公式
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-tensorflowkeras" class="md-nav__link">
+    <span class="md-ellipsis">
+      7 TensorFlow和Keras
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7 TensorFlow和Keras">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-tensorflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 TensorFlow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      8 深度学习中的超参数
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8 深度学习中的超参数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1 正则化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    骑行
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            骑行
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E9%AA%91%E8%A1%8C/%E6%9C%89%E6%B0%A7%E8%AE%AD%E7%BB%83%E6%96%B9%E6%B3%95/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    骑行有氧训练
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E9%AA%91%E8%A1%8C/%E9%AA%91%E8%A1%8C%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    骑行中的一些问题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1 回归与逻辑回归
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1 回归与逻辑回归">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 回归的定义与构建回归模型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-r-squared" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 R-squared
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 多元回归与回归中的多重共线性
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4 回归中各变量的影响力
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5 构建多元回归模型的步骤(总结)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6 逻辑回归模型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7 逻辑回归线的准确率
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.8 多元逻辑回归的多重共线性和个体影响力
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 决策树
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2 决策树">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 什么是决策树？决策树的分类准则是什么？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 决策树算法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 过拟合问题
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 模型选择和交叉验证
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3 模型选择和交叉验证">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 构建模型的步骤
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 模型验证指标：回归
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 模型验证指标：分类
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 权衡偏差与方差
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5 交叉验证
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4 聚类分析
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4 聚类分析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 无监督学习
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-k-means" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 K-means聚类
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 聚类簇数量的选取
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-boosting" class="md-nav__link">
+    <span class="md-ellipsis">
+      5 随机森林和Boosting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5 随机森林和Boosting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 集成模型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 随机森林
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-boosting" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3 Boosting算法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-adaboosting" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.4 AdaBoosting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55-gradient-boosting" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.5 Gradient Boosting
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6 人工神经网络
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6 人工神经网络">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 逻辑回归的网路图
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 决策边界的概念
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3 多决策边界问题及其解决方案
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.4 神经网络算法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.4 神经网络算法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      隐藏结点的数量问题
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      反向传播算法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      反向传播算法中的数学计算公式
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-tensorflowkeras" class="md-nav__link">
+    <span class="md-ellipsis">
+      7 TensorFlow和Keras
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7 TensorFlow和Keras">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-tensorflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 TensorFlow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      8 深度学习中的超参数
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8 深度学习中的超参数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1 正则化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">机器学习笔记</h1>
+<hr />
+<p>此笔记记录了机器学习过程中的主要的知识点内容和理解。  </p>
+<h2 id="1">1 回归与逻辑回归</h2>
+<hr />
+<h3 id="11">1.1 回归的定义与构建回归模型</h3>
+<p>回归(regression)就是根据数据模式预测未来的数据走向。我们首先可以根据在图标中的样式观察两者是否有线性或者非线性关系，然后将模型适配至数据中，最后选择出最适配数据的模型。因此如何选择适当的模型是回归过程中的关键。相对书面一点，我们需要根据误差 $min\sum e$ 求回归系数 $\beta$ 。  </p>
+<p>在python里面这一过程的迭代优化已经被封装起来，我们直接调用函数即可。  </p>
+<h3 id="12-r-squared">1.2 R-squared</h3>
+<p>实际的数据预测中，真实值、预测值和误差之间的关系如下：  </p>
+<p>$$
+Y(真实值) = Y(预测值) + E(误差)
+$$</p>
+<p>因此在 $y$ 处的总方差=回归模型的可解释方差+未解释方差</p>
+<p>$$
+SST = SSR + SSE
+$$</p>
+<p>对于一个好模型来讲 $SST$ 越接近1就是越接近真实值，由此可以定义一个评判一个模型好坏的标准$R-sqaured$：  </p>
+<p>$$
+R-squared = \frac{SSR}{SST}
+$$</p>
+<p>在工业界中 $R-sqaured$ 的最小值为0.8。  </p>
+<h3 id="13">1.3 多元回归与回归中的多重共线性</h3>
+<p>在进行数据分析时，可能会有多个不同的数据都会对预测值有影响。比起使用单独自变量预测数据，我们可以使用多个自变量进行回归，这就是多元回归。  </p>
+<p>简单的线性回归方程：
+$$
+y = \beta_{0} + \beta_{1}x
+$$  </p>
+<p>使用多个变量的线性多元回归方程: </p>
+<p>$$
+y = \beta_{0} + \beta_{1}x_{1} + \beta_{2}x_2{2}...... + \beta_{k}x_{k}
+$$</p>
+<p>使用多元回归往往会带给我们更高的R-sqaured值，也就是意味着更正确的模型。但是其几个自变量也会存在一些问题，比如这些多元自变量中会存在线性相关的向量组。这样的关系（依赖关系），我们可以称之为回归中的多重共线性。  </p>
+<p>我们为什么需要关注多重共线性？这是因为多重共线性会对模型带来信任挑战，即模型中的部分相关系数是不可靠的，这是为什么呢？  </p>
+<p>假如三个自变量 $x_1, x_2, x_3$ 中， $x_1, x_3$ 有着 $x_1 = 2x_3$ 的线性关系，那么对于一个模型来讲，预测的结果并不存在唯一的解。也就是脱离了数学中方程的定义——一组自变量只对应一个因变量，如果这个定义被打破，那么就不存唯一的映射关系，我们也无法准确预测这个结果。<br />
+若几个自变量之间存在一些线性关系，那么我们并不需要这么多组的数据也可以正确地预测，也就是对R-squared值不会有太多的影响。简而言之，我们要去发现回归中的多重共线性，并且除掉它。  </p>
+<p>具体方法简而言之，我们可以求出自变量的个数个 $VIF$ 值（方差膨胀因子）。当 $VIF$ 值大于5时，就说明这个变量存在多重共线性。计算公式为：  </p>
+<p>$$ 
+VIF = \frac{1}{1 - R_{i}^2}
+$$</p>
+<p>其中 $R_i$ 是对应变量 $x_i$ 的R-sqaured值。 </p>
+<h3 id="14">1.4 回归中各变量的影响力</h3>
+<p>我们计算了多重性，已经排除了非影响回归的因素。但这还不够，如果是一个变量，那么这个变量对回归的影响力是百分之百；但如果是多个变量，每一个变量对回归的影响不一定相同，所以我们要求出每一个变量对于回归的影响是多少，这是构建回归模型的必要步骤。  </p>
+<p>使用t-test和P-value就可以检测出各变量对回归的影响程度。若P-value这个值大于0.05，说明该变量对回归的影响很小，计算方法已经集成到python的summary方法中，下面简单介绍一下：  </p>
+<ul>
+<li>原假设 $H_0$ ：变量 $x_p$ 是没有影响力的变量( $\beta_0 = 0$ )</li>
+<li>备择假设 $H_1$ ：变量 $x_p$ 是有影响力的变量( $\beta_0 \neq 0$ )</li>
+<li>测试统计值：$t=\frac{\beta_p}{s(\beta_p)}$ </li>
+<li>如果 $t&gt;t(\frac{\alpha}{2};n-k-1)$ 或者 $t&lt;-t(\frac{\alpha}{2};n-k-1)$  并且设置 $\alpha$ 为5%，则拒绝原假设。</li>
+</ul>
+<h3 id="15">1.5 构建多元回归模型的步骤(总结)</h3>
+<p>略</p>
+<h3 id="16">1.6 逻辑回归模型</h3>
+<p>逻辑回归模型不同于线性回归模型，逻辑回归更倾向于模拟0或者1的情况，或者-1，0或者1的情况。是一种逻辑判断。但是数学中，没有绝对的逻辑回归连续函数，想要用连续函数来预测的话，我们可以使用指数函数来进行建模：  </p>
+<p>$$
+y=\frac{e^x}{1+e^x}
+$$</p>
+<p>对于逻辑回归模型中也有线性系数要求解：  </p>
+<p>$$
+y=\frac{e^{\beta_{0}+\beta_{1}x}}{1+e^{\beta_{0}+\beta_{1}x}}
+$$</p>
+<p>其中， $\beta_0,\beta_1$ 就是我们要求解的线性系数。 </p>
+<h3 id="17">1.7 逻辑回归线的准确率</h3>
+<p>逻辑回归的计算方法与线性回归中的方法不太相同，但是思路上是大同小异的。我们根据预测的模型来根据原数据进行预测，然后将预测值与真实值进行比较。由于只有0和1的情况，所以只会存在一些以下四种情况： $[0,1], [0,0], [1,1], [1,0]$ 。  </p>
+<p>这种矩阵叫做混淆矩阵(confusion matrix)，同时也可以根据此矩阵计算出一个准确率比值：  </p>
+<p>$$
+准确率 = \frac{正确分类的个数}{总个数}
+$$</p>
+<p>$$
+准确率 = \frac{cm[0,0]+cm[1,1]}{cm[0,0]+cm[1,0]+cm[0,1]+cm[1,1]}
+$$</p>
+<h3 id="18">1.8 多元逻辑回归的多重共线性和个体影响力</h3>
+<p>同多元线性回归模型，此处略。  </p>
+<h2 id="2">2 决策树</h2>
+<hr />
+<h3 id="21">2.1 什么是决策树？决策树的分类准则是什么？</h3>
+<p>决策树类似一种逻辑分类，其基础是一种二叉树。每一层都根据一个元素分成两类，然后下一层在上一层的基础上就会再分，预测时根据这层分类标准进行遍历（先序遍历）。</p>
+<h3 id="22">2.2 决策树算法</h3>
+<p>略</p>
+<h3 id="23">2.3 过拟合问题</h3>
+<p>略</p>
+<h2 id="3">3 模型选择和交叉验证</h2>
+<hr />
+<p>首先，我们要谨慎地选择数据集，并且对原始的数据集要有一定的筛选和处理。然后我们就可以进型建模，建模过后不能过早地看到建模的结果很好就部署，而是要对模型有一定的选择过程。就是因为你选择的模型并不一定是最佳答案，或者可能会有更正确的答案，所以我们要对模型进行流程上的验证。  </p>
+<p>同时，部署模型过后，也并不是什么都不做，因为总会有新的数据到来。新的数据会不会不适应这个“过去”的模型？也会是一个问题。所以我们要进行进一步的验证，也就是既要满足过去的数据集，也要满足新的数据集，让模型更加健壮和长时间正确。  </p>
+<h3 id="31">3.1 构建模型的步骤</h3>
+<p>构建模型的生命周期分为以下五个步骤：<br />
+1. <strong>定义模型并完成目标。</strong>
+    首先是要定义我们的任务是什么？完整的目标是什么？然后去分析数据的输入和输出的特征。<br />
+2. <strong>探索、验证及准备数据。</strong><br />
+    - 对数据集的row和column进行分辨，查看有没有一些明显的缺失等问题
+    - 分析每一个单row或者column，查看有没有奇异值
+    - 根据上述的分析，筛选出干净有用的数据开始分析
+    - 对一些文本数据转换成数字睡觉<br />
+3. <strong>构建模型。</strong><br />
+    - 选择合适的模型
+    - 查看数据集的类型是分类数据还是回归数据
+    - 选择相同类型的三个及以上的模型进行尝试
+    - 尝试不同的特征来训练模型<br />
+4. <strong>验证模型。</strong><br />
+    - 使用R-sqaured或者准确率进行必要的模型验证
+    - 在训练数据集和预测数据集上进行验证
+    - 找出可能使模型失败的数据集进行验证<br />
+5. <strong>部署模型。</strong><br />
+    ……  </p>
+<h3 id="32">3.2 模型验证指标：回归</h3>
+<p>回归模型中我们基本上会围绕标准差和标准房差进行验证，除了R-squared之外，还包含：<strong>MAD</strong>，<strong>MAPE</strong>，<strong>RMSE</strong>。  </p>
+<ol>
+<li>平均绝对离差<strong>MAD</strong>
+    该指标的公式如下所示：<br />
+    $$
+    MAD = \sum_{i=1}^n {\frac{\left\vert y_i - \hat{y_i} \right\vert}{n}}
+    $$
+    公式中可以看出，<strong>MAD</strong>其实就是标准差的均值，当<strong>MAD</strong>越小时，就说明数据的偏差越小。但是<strong>MAD</strong>的值没有很好的范围标准，当数据偏大时，<strong>MAD</strong>的值也会很大，但是并不一定代表数据会偏差很多。</li>
+<li>平均绝对离差百分比<strong>MAPE</strong>
+    该指标的公式如下所示：
+    $$
+    MAPE = \frac{100}{n}\sum_{i=1}^n {\frac{\left\vert y_i - \hat{y_i} \right\vert}{y_i}}
+    $$
+    <strong>MAPE</strong>从公式中，可以发现本质上是<strong>MAD</strong>的百分比形式。在使用这个标准的时候，就可以不太关注数据的规模。</li>
+<li>均方根误差<strong>RMSE</strong>
+    该指标的公式：<br />
+    $$
+    RMSE = \sqrt{\sum_{i=1}^n {\frac{(y_i - \hat{y_i})^2}{n}}}
+    $$
+    该指标越小，说明数据的偏差度就越小。  </li>
+</ol>
+<h3 id="33">3.3 模型验证指标：分类</h3>
+<p>对于逻辑回归模型，也就是分类任务时，我们需要使用混淆矩阵和准确率来对模型进行验证。    </p>
+<p>但是我们可能会遇到一种情况：准确率非常高的时候，也就是接近99%。那么我们预测正确数据，也就是 $cm[0,0]$ 的概率会很高，但是由于正确的错误数据相对太少，所以我们对整的错误数据，也就是 $cm[1,1]$ 的概率会很低，这是数据量不够导致的。为了判断这种情况是否存在，我们需要使用两种指标：<strong>灵敏度</strong>和<strong>特异度</strong>来进行判断。  </p>
+<ol>
+<li><strong>灵敏度</strong>
+    灵敏度是第一个分类的准确率，按照惯例就是 $cm[0,0]$ 的比例，我们也称正例类的比例：<br />
+    $$
+    \begin{aligned}
+    灵敏度 &amp; = \frac{cm[0,0]}{cm[0,0] + cm[0,1]}\
+    &amp; = \frac{真正例(TP)}{真正例(TP) + 假反例(FN)}\
+    \end{aligned}
+    $$</li>
+<li><strong>特异度</strong>
+    反之，特异度是第二个分类的准确率，按照惯例是 $cm[1,1]$ 的比例，我们也称正反例的比例：<br />
+    $$
+    \begin{aligned}
+    特异度 &amp; = \frac{cm[1,1]}{cm[1,1] + cm[1,0]}\
+    &amp; = \frac{真反例(TN)}{真反例(TN) + 假正例(FP)}\
+    \end{aligned}
+    $$  </li>
+</ol>
+<p>一般这两种指标，不是只看其中一个。一般情况下，我们倾向于较高的灵敏度，较低的特异度，但是特异度不能像上述情况一样，过于低。所以我们需要另外的指标来使模型的灵敏度和特异度达到较为平衡的水平，也就是<strong>ROC</strong>和<strong>AUC</strong>。  </p>
+<ol>
+<li><strong>ROC</strong>受试者工作特征
+    ROC是一种曲线，横坐标是特异度，纵坐标是灵敏度。二者往往会呈现一种对数函数曲线形式。我们通常会选择拐点的位置作为最终模型的灵敏度和特异度。</li>
+<li><strong>AUC</strong>
+    AUC是ROC曲线的对角线。ROC曲线离AUC线越远，就代表模型越好。  </li>
+</ol>
+<p>另外还有一种指标叫做<strong>F1 Score</strong>，F1 Score是灵敏度和特异度的一种拓展。</p>
+<h3 id="34">3.4 权衡偏差与方差</h3>
+<p>模型也会有过拟合问题和欠拟合问题，拟合过度会导致未来数据的不精确，拟合欠缺会导致训练数据和未来数据与模型不匹配。因此一个好的模型不仅不能拟合过度，也要让拟合不那么欠缺。衡量这两个问题的指标为<strong>方差</strong>和<strong>偏差</strong>。  </p>
+<p>模型中的广义误差可以分为三个部分，<strong>不可约误差</strong>，<strong>偏差</strong>和<strong>方差</strong>。  </p>
+<p><strong>不可约误差</strong>就是数据中总会存在一些无法减少的固有误差，就是无论你拟合出多么好的模型，都会有误差，不可能所有的数据都是100%0误差。<strong>偏差</strong>是由欠拟合造成的，<strong>方差</strong>是由过拟合造成的。总方差的公式如下：  </p>
+<p>$$
+总方差 = 不可约误差 + 偏差^2 + 方差
+$$</p>
+<p><strong>偏差</strong>和<strong>方差</strong>往往是反方向增长的，当<strong>偏差</strong>减少时，可能<strong>方差</strong>会很大；<strong>方差</strong>很小时，<strong>偏差</strong>会很大。所以我们找到一个平衡点。  </p>
+<h3 id="35">3.5 交叉验证</h3>
+<p>交叉验证是指在训练数据上构建模型，并且在测试数据上验证模型。测试数据和训练模型都是数据集中分散提取的两部分数据。 </p>
+<p>目前有一种经典的<strong>K-折交叉验证</strong>，通常K是一个代表比例的一个数字。若K=10，则代表将整体数据集分成十份，即每一份占整体数据集的10%，这是第一步。  </p>
+<p>其次，我们需要构建K个模型。首先我们对数据集的每一个字集编序号，我们可以将第一个字集作为验证子集，然后剩余的字集作为训练子集。后面的模型都是如此，第二个模型就是将第二个子集作为验证子集，剩余子集作为训练子集。重复这个步骤，我们就可以得到K个模型。  </p>
+<p>最后，我们要将这几个模型都计算准确率，用平均准确率作为整体一次的建模过程的准确率。我们每一次调整参数都要看这个准确率。所以这个方法的时间复杂度和操作复杂度都很高，我们可以使用别的方法——<strong>训练集-验证集-留出交叉验证方法</strong>。  </p>
+<p>差别在于，留出数据集是不用于前面的交叉验证过程和调整过程，而是用于最后的模型测试。所以在一定的方面能够平衡<strong>K-折交叉验证</strong>的高时间复杂度的问题。  </p>
+<h2 id="4">4 聚类分析</h2>
+<hr />
+<p>机器学习算法通常有两种学习方式，<strong>无监督学习</strong>和<strong>有监督学习</strong>。当我们的训练数据是有标签的，就可以使用<strong>有监督学习</strong>，即我们的学习是有正确答案给学习模型的；反之，则需要使用<strong>无监督学习</strong>，模型会通过不断的学习和调整，来尽可能地使学习的结果为正确的结果。  </p>
+<h3 id="41">4.1 无监督学习</h3>
+<p>无监督学习主要有两种算法，一个是计算线性回归的<strong>主成分分析</strong>方法，另一个是计算逻辑回归的<strong>聚类分析</strong>方法。聚类分析是一种无监督的学习方法，它面临的挑战就是如何在没有“正确答案”的情况下，将数据分成正确的类别。  </p>
+<p>其主要的思想跟决策树不同的点在于决策树是有“正确答案”的，即标签，但是聚类分析是不需要有标签的。突破点就在于虽然数据的分类没有“正确答案”，但是数据本身是具有一定的特征的，我们可以通过数据本身的特点来进行大致分类，这也是我们如何在实际的生活中进行分类的方法。例如你在面对一堆积木的情况下，如何把他们进行分类呢？无非是通过积木本身的一系列特征来分类：位置、体积、形状或者颜色等等。他们每一个积木很多不同的特征，运用哲学中的语言来讲，事物本身具有共性和个性，个性融入共性中，共性也脱离不开个性。  </p>
+<p>那么具体如何实现这个思想呢？学术上，聚类分析一般将整体划分为几个子集，这几个子集会有一定的<strong>相似性</strong>和<strong>差异性</strong>（也就是我们上面讲到的共性和个性）。下面来介绍如何进行分别<strong>相似性</strong>和<strong>差异性</strong>：    </p>
+<ul>
+<li>首先，假设要分类的集合的每个对象有两个特点。我们可以将这个特点数据化，然后使用二维坐标轴表示。这也就表示我们将这个对象使用两个维度进行分类。  </li>
+<li>然后我们就会发现，部分对象会一个堆一个堆地出现在坐标轴上。从表象上来看，我们可以认为聚在一起的一个堆就是一类。  </li>
+<li>至于如何判定一个堆的边界，我们就需要使用<strong>欧几里得距离</strong>来判断。在我们的这个例子中，就是两个点之间的距离。计算每个点（假设有N个点）之间的距离（无方向的距离），我们就可以得到一个对称的 $N \times N$ 距离矩阵 A。点 $A[i][j]$ 代表第 $i$ 个点到第 $j$ 个点之间的距离。  </li>
+<li>我们可以通过这个距离矩阵来辅助我们设立<strong>相似性</strong>和<strong>差异性</strong>之间的界限。  </li>
+</ul>
+<h3 id="42-k-means">4.2 K-means聚类</h3>
+<p>帮助我们判断<strong>相似性</strong>和<strong>差异性</strong>之间的工具——距离矩阵完成了，但是我们该如何确定这个界限呢？  </p>
+<p>我们可以设定一个类别的数目 $K=3$ ，规定他一共有3个类别。由于他这个分类是可能出现在任意区域的，而且我们后期可以通过迭代来调整和优化，所以最开始可以先随机设置3个点，作为3个类别的初始中心点。然后以一个初始的距离来进行对所有的除中心店以外的点进行分类。  </p>
+<p>这样我们虽然得到了初步的三个类别，但这三个类别会很粗糙且不合理。不合理的点在于，有些点到这些中心点的距离会很大或者很小。我们要做的就是让这个距离总和或者偏差值做到最小，那么我们就可以不断地更新中心点的位置，让每个簇中的点到这个簇的中心点的距离偏差值最小。有点类似于<strong>哈夫曼树的WPL</strong>这个概念。这个就是<strong>K-means聚类算法</strong>，其中的K就是K个簇。  </p>
+<p><strong>K-means聚类算法</strong>具体是根据每次迭代簇的平均中心点来进行更新中心点的。也就是每个簇中所有点的平均值作为中心点，然后再次计算距离矩阵，更新簇的范围。然后再次重复这个步骤，最后这个中心点基本上不会有变动，就得到了最终的分类结果。  </p>
+<h3 id="43">4.3 聚类簇数量的选取</h3>
+<p><strong>K-means聚类算法</strong>的关键在于如何选择合适的簇的数量。我们一般使用“肘部法则（Elbow Method）”。  </p>
+<p>我们可以选取不同的聚类簇来实现不同的分类结果，每一次分类结果都会有一个距离平方和，是簇中每个样本点的距离平方和：  </p>
+<p>$$
+Inertia = \sum_{i=1}^{n_1} {(x_i - {\mu}<em i="1">1)^2} + \sum</em>}^{n_2} {(x_i - {\mu<em i="1">2)^2} + \cdots + \sum</em>
+$$}^{n_k} {(x_i - {\mu}_k)^2</p>
+<p>其中，$\mu_1,\mu_2,\mu_k$ 就是每一次迭代的聚类中心。然后我们将这个Inertia值放在坐标轴上，然后我们选择的区域就是函数下降不快不慢的位置，也就是“肘部”区域。</p>
+<h2 id="5-boosting">5 随机森林和Boosting</h2>
+<hr />
+<p>之前的算法都是很优秀的算法，但是其准确性和鲁棒性不够强。我们如果想要追求更高的模型准确性，那么可以选择<strong>黑箱方法</strong>。包括<strong>随机森林</strong>、<strong>Boosting</strong>和<strong>人工神经网络</strong>等等，这些算法可以识别数据中的复杂模式，同时也会要求更高的终端计算性能。  </p>
+<h3 id="51">5.1 集成模型</h3>
+<p>我们想要得到一个事物的评价，光靠一个可靠的、智慧的人的建议可能不太够。所以我们可以参考很多较不那么可靠的、不那么智慧的人的建议作为一个比较系统的建议，从而使我们的评价体系更全面和可靠。这就是<strong>群体智慧</strong>，也是<strong>集成模型</strong>的思想。  </p>
+<p><strong>集成模型</strong>就是我们可以建立很多个可靠模型，来得到一系列的结果，最后将这些结果总结和概括，得到一个最终的结果，这个结果往往会更加可靠和正确。这是由于，如果单个模型的正确率是在90%，那么10%的概率会犯错。但是如果是很多个正确率为80%的模型，那么至少有一半模型正确的概率就是：  </p>
+<p>$$
+\begin{aligned}
+&amp; 使用标准正态分布近似二项分布\
+&amp; np = 100 * 0.8 = 80 &gt; 5 \
+&amp; \sigma^2 = np(1-p) = 100 * 0.8 * 0.2 = 16 \
+&amp; z = \frac{49.5 - 80}{\sigma} = -7.625 \
+&amp; z 远远小于 3，所以基本上概率是接近于 1 的。
+\end{aligned}
+$$</p>
+<p>综上所述，<strong>集成模型</strong>是很有优势的。其中，<strong>随机森林</strong>就应用了<strong>集成模型</strong>的思想。在<strong>Bagging</strong>算法（是一种自动耦合和汇合投票结果的算法）的基础上，应用了决策树算法，并且在基础<strong>Bagging</strong>算法的基础上，进行了一定的改进。  </p>
+<h3 id="52">5.2 随机森林</h3>
+<p><strong>随机森林</strong>算法的步骤：  </p>
+<ul>
+<li>使用K次自助采样选取模型的训练样本，K的大小越大越好</li>
+<li>基于每一个训练样本，构建决策树模型。构建模型时不考虑所有的样本特征  </li>
+<li>获取投票数量最高的类别，将该类别作为最终的预测结果</li>
+</ul>
+<p><strong>随机森林</strong>的随机性来源于，我们每次构建决策树时随机选择的样本特征。这样每次决策树构建时随特征（变量）的不同，也就带来的决策树模型的不同。  </p>
+<p>在构建决策树时选择样本的特征数量 $p$ 称为<strong>随机森林</strong>中的<strong>超参数</strong>。一般 $p = \sqrt(t)$ ， $t$ 是所有特征（变量）数目。  </p>
+<h3 id="53-boosting">5.3 Boosting算法</h3>
+<p><strong>Boosting</strong>与<strong>随机森林</strong>算法不太相同，其是在<strong>Bagging</strong>算法的基础上，对每一个模型加上了一些权重，最后再将所有模型合并成一个模型。有两种比较经典的<strong>Boosting</strong>算法：<strong>AdaBoosting</strong>和<strong>Gradient Boosting</strong>。  </p>
+<h3 id="54-adaboosting">5.4 AdaBoosting</h3>
+<p><strong>AdaBoosting</strong>并不是类似<strong>随机森林</strong>一样，并行构建一系列模型，而是通过构建模型进行迭代。对每一个模型都有一定的打分系统。所以相比较其他算法，多了一个误差计算和加权样本模块。这个模块，会对于进行错误分类的记录进行更加高的权重，迭代到下一次的建模过程中。最后，误差减到最小，或者达到最大迭代限制后，算法会结束迭代过程。  </p>
+<p>可以看出，在这个过程中，比较关键的过程就在于对错误预测的模型的权重计算和误差计算过程。具体的计算步骤如下：  </p>
+<ul>
+<li>$N$ 表示训练集中的总记录数。每个样本的权重 $w_i$ ， $i$ 代表迭代次数，首先默认 $w_1 = 1/N$</li>
+<li>构建模型 $M$ ，误差因子和准确率因子计算如下：</li>
+</ul>
+<p>$$
+\begin{aligned}
+&amp; 误差因子e_M = \frac{\sum_{i=1}^{N}{w_iI}}{\sum_{i=1}^N{w_i}} \
+&amp; 准确率因子 \alpha_M = log\left(\frac{1-e_M}{e_M}\right) \
+\end{aligned}
+$$</p>
+<ul>
+<li>更新后的权重为：$w_{i+1} = w_ie^{\alpha_Ml}$ 。然后将权重进行标准化，让权重和为1。  </li>
+</ul>
+<h3 id="55-gradient-boosting">5.5 Gradient Boosting</h3>
+<p>思想上同<strong>AdaBoosting</strong>，类似于线性回归中的梯度下降。  </p>
+<h2 id="6">6 人工神经网络</h2>
+<hr />
+<p>神经网络（Neural Network），是一种高级机器学习算法，并且可以说是机器学习算法中最复杂和灵活的一种算法，其可以学习数据中几乎任何形式的非线性模型。</p>
+<h3 id="61">6.1 逻辑回归的网路图</h3>
+<p>神经网络中的术语和逻辑回归的不太相同。逻辑回归中的变量是自变量和因变量，是沿用了数学上的用法；神经网络中的参数一般使用权重表示，使用的是计算机中的语言。  </p>
+<p>神经网络的模型使用网络图表示，因为神经网络中间过程会比较复杂，使用网络图，可以很好地展示每一个结点之间的关系，以下使用一个带有两个预测变量的标准逻辑回归方程来对比二者的术语。  </p>
+<p>$$
+y = \frac{e^{\beta_0 + \beta_1 x_1 + \beta_2 x_2}}{1 + e^{\beta_0 + \beta_1 x_1 + \beta_2 x_2}}
+$$</p>
+<ul>
+<li>$x_1, x_2$ 预测变量（逻辑回归）、输入变量（神经网络）：在逻辑回归中，自变量称为预测变量；在神经网络中，自变量称为输入变量。</li>
+<li>$y$ 目标变量、输出变量：在逻辑回归中，因变量称为目标变量；在神经网络中，其被称为输出变量。</li>
+<li>$\beta_0,\beta_1;w_0,w_1$ 相关系数、权重：逻辑回归中，加在预测变量前面的系数称为相关系数；而在神经网络中，被称为权重。  </li>
+<li>$\beta_0;w_0$ 截距、偏置权重：逻辑回归中，不加在预测变量的系数，被称为截距；而在神经网络中被称为偏置权重。  </li>
+<li>Logistic函数、Sigmoid函数：逻辑回归中，激活函数被称为Logistic函数，也就是逻辑函数；而在神经网络中，被称为Sigmoid激活函数。  </li>
+</ul>
+<p>$$
+ Logistic:g(x) = \frac{e^x}{1 + e^x}
+ $$</p>
+<p>$$
+ Sigmoid:g(x) = \frac{1}{1 + e^{-x}}
+ $$</p>
+<ul>
+<li>模型方程：逻辑回归和上述的模型方程相同；在神经网络中，一般可以表示为 $y = g(\sum {w_i x_i})$ 。  </li>
+<li>模型表示方法：逻辑回归使用函数的方式；神经网络中，使用的是图的形式（结点表示输入、输出变量，边表示权重）。  </li>
+</ul>
+<h3 id="62">6.2 决策边界的概念</h3>
+<p>逻辑回归的任务一般就是分类任务，对于将目标分成两类的情况来讲，那么就是分成0～1。那么我们想要分类，一般就是取一个边界，大于多少多少就是一类；反之则为另一类。而这个多少多少就是决策边界。  </p>
+<p>在逻辑回归中，决策边界的取值在Logistic函数中所有体现。也就是 $x = 0$ 的时候， $y$ 的取值，一般为0.5。我们将上述提及的函数拿出来，并两边取对数，得：  </p>
+<p>$$
+\begin{equation}
+\begin{aligned}
+y&amp; = \frac{e^{g(x)}}{1 + e^{g(x)}} \
+log(y)&amp; = g(x) - log(1 + e^{g(x)}) \
+\end{aligned}
+\end{equation}
+$$</p>
+<p>然而，其中</p>
+<p>$$
+\begin{equation}
+\begin{aligned}
+1 - y&amp; = \frac{1}{1 + e^{g(x)}} \
+log(1-y)&amp; = -log(1 + e^{g(x)}) \
+\end{aligned}
+\end{equation}
+$$</p>
+<p>将结果和 $y = 0.5$ 代入到上式，可以得到：  </p>
+<p>$$
+\begin{equation}
+\begin{aligned}
+log(\frac{y}{1 - y})&amp; = g(x) \ 
+log(\frac{y}{1 - y})&amp; = \beta_0 + \beta_1 x_1 + \beta_2 x_2 \
+log(\frac{0.5}{0.5})&amp; = \beta_0 + \beta_1 x_1 + \beta_2 x_2 \
+0&amp; = \beta_0 + \beta_1 x_1 + \beta_2 x_2 \ 
+x_2&amp; = -\frac{\beta_0}{\beta_2} - \frac{\beta_1}{\beta_2} x_1 \
+\end{aligned}
+\end{equation}
+$$</p>
+<p>从而我们可以得到，决策边界线方程，就是一个一元一次函数。  </p>
+<h3 id="63">6.3 多决策边界问题及其解决方案</h3>
+<p>但是如果问题升级为，将这一堆数据分成三份、四份呢？很明显，一元一次函数是无法解决此类问题的。可能都不需要将多维数据分成n份，将两类数据分成两份也有可能很困难。这是由于，可能同一类的数据不在一个位置上，可能成两堆然后分散在不同的区域上。  </p>
+<p>这种情况下，使用上述方法会大概率失败。那么我们应该怎么处理呢？  </p>
+<p>有一种思路，就是将问题简化为我们单决策边界问题。也就是将数据分成可以分成两类的几个大类。然后每一个大类中我们使用逻辑回归决策边界方案来处理。这就是我们所要描述的中间过程。这几个大类就是中间过程。  </p>
+<p>中间过程也是需要输入、输出变量来建模的，所以需要一定的权重。但是中间过程模型之间肯定是不一样，也就是权重是不一样的。用函数的方式来表达，就是如下所示：  </p>
+<p>以中间过程函数 $h_1$, $h_2$ 作为输入变量的输出变量的表达式为：</p>
+<p>$$
+y = g(\sum{w_ih_i})
+$$</p>
+<p>然而，中间过程的表达式为：  </p>
+<p>$$
+h_i = g(\sum{w_{ji}x_i})
+$$</p>
+<p>因此，我们可以将其结合，最终的表达式为：  </p>
+<p>$$
+y = g(\sum{w_ig(\sum{w_{ji}x_i})})
+$$</p>
+<h3 id="64">6.4 神经网络算法</h3>
+<p>查看上述例子，我们可以将其分成三层：<strong>输入层</strong>，中间层和<strong>输出层</strong>。按理说，只要中间层足够，我们可以表示任何数据中的非线性关系。在神经网络中，我们一般讲中间层称为<strong>隐藏层</strong>。  </p>
+<p>当我们遇到一些复杂的问题，我们就可以用加入隐藏层的方法来解决。比如，在计算机图形学的世界中，我们需要使用较多的中间层来实现对图像的预测和识别。因为图像中的pixel都是像素值，而且像素值很密集且是二维的，其中会有很多的像素组成表示的不同的图案。根据分辨率的大小，会有更多对隐藏层的需求，来实现预测。  </p>
+<h4 id="_2">隐藏结点的数量问题</h4>
+<p>那么隐藏结点和隐藏层应该有多少呢？我们可以通过微调这个数量和训练、测试的结果来查看。根据前几节的内容来看，测试数据集和训练数据集的预测结果均在在80～90%左右就是优秀的调整。<br />
+但是隐藏层又应该有多少呢？应该是多个隐藏层、少一点的隐藏结点；还是应该多个隐藏结点，都放在少数量的隐藏层上呢？按道理来讲，二者操作都会导致计算的复杂度，隐藏层一般来讲可以多一点，但是结点一般会少一点。</p>
+<h4 id="_3">反向传播算法</h4>
+<p>反向传播算法（BackPropagation Algorithm），是用来计算合适的权重的。首先，权重的数量是可以知道的，我们会设置一定数量的隐藏层（本节例子中为1）、隐藏结点、输入结点和输出结点。知道有多少个权重之后，我们就需要求解每一个权重合适的值。  </p>
+<p>一般来讲，每层结点数目如果有三个左右，那么就会有几十个权重需要计算。你不可能一个一个试吧？那得尝试到什么时候？但其实计算机中就是这么计算的，通过初始的权重一个一个进行微调。所以如果有大致的权重，那么就是最好的情况了。如果没有，那么只能从头开始初始化进行尝试。BA的大致步骤如下：  </p>
+<ol>
+<li>随机初始化：<ul>
+<li>通过随机权重值来进行初始化。</li>
+<li>一般我们可以使用标准正态函数中的随机值来使用。</li>
+</ul>
+</li>
+<li>激活函数和正向传播：  <ul>
+<li>激活函数就是 $g(\sum{w_ix_i})$ 。</li>
+<li>通过获取的数据，乘上最初的权重，然后得到中间变量的值。</li>
+<li>然后我们就可以根据上述式子，得到预测值 $\hat{y} = g(\sum{w_ig(\sum{w_{ji}x_i})})$ 。</li>
+</ul>
+</li>
+<li>误差计算和反向传播：<ul>
+<li>计算误差就是BA最精华的部分。</li>
+<li>我们首先知道了预测值和真实值之间的误差，但是这个误差有可能是中间变量和输入变量之间造成的误差；也有可能是中间变量和输出值之间的误差。</li>
+<li>因此我们首先计算真实值和预测值之间的误差，然后我们可以再进一步计算中间变量和输入变量之间的误差值。</li>
+</ul>
+</li>
+<li>更新权重：<ul>
+<li>权重的计算使用梯度下降法来实现： $w_新 = w_旧 + \Delta{w}$ 。</li>
+</ul>
+</li>
+<li>停止迭代：<ul>
+<li>一个完整的Epoch中，会更新一遍所有的权重。</li>
+<li>我们可以进行多次的Epoch，从而令误差一次一次地减少，直到不再减少时，就可以认为我们已经对该模型迭代完成。</li>
+</ul>
+</li>
+</ol>
+<h4 id="_4">反向传播算法中的数学计算公式</h4>
+<ul>
+<li>误差和反向传播：<ul>
+<li>总误差平方： $E = \frac{1}{2}\sum{(y-\hat{y})^2}$ 。</li>
+<li>输出层的梯度误差（求解偏导）： $\delta = \hat{y}(1-\hat{y})(y - \hat{y})$ 。</li>
+<li>隐藏层的梯度误差（同上）： $\delta_j = \hat{y}(1-\hat{y})w_j\delta$ 。</li>
+<li>这里的误差函数可以认为是权重为0.5的方差，然后求其梯度就是$E$对$x$求偏导。实则也不是$x$，而是那一堆输入变量$w_0+w_1x_1+w_2x_2$ 。  </li>
+</ul>
+</li>
+<li>更新权重：<ul>
+<li>更新权重，就是通过误差梯度，乘上其输入，可能还会有一个学习率 $\eta$ 。</li>
+<li>输出层修正的权重：$\Delta w_j = \eta h_j \delta$。</li>
+<li>隐藏层修正的权重：$\Delta w_ij = \eta x_i \delta_j$。</li>
+<li>更新的权重，就是旧权重加上修正权重。</li>
+</ul>
+</li>
+</ul>
+<h2 id="7-tensorflowkeras">7 TensorFlow和Keras</h2>
+<hr />
+<h3 id="71-tensorflow">7.1 TensorFlow</h3>
+<h2 id="8">8 深度学习中的超参数</h2>
+<hr />
+<h3 id="81">8.1 正则化</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+        <script src="/mathjax.js"></script>
+      
+        <script src="/katex.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
